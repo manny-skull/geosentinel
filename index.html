@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoSentinel 2.0 — Global Disease Surveillance</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --un-blue:#009EDB;--un-dark:#003B73;--un-light:#E8F4FD;--un-accent:#0072BC;
+    --bg:#f7f9fc;--white:#ffffff;--card:#ffffff;
+    --text:#1a2332;--dim:#6b7b8d;--light-border:#e2e8f0;
+    --critical:#d32f2f;--high:#e65100;--moderate:#f9a825;--low:#2e7d32;
+    --crit-bg:#fce4ec;--high-bg:#fff3e0;--mod-bg:#fffde7;--low-bg:#e8f5e9;
+    --shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+    --shadow-lg:0 4px 12px rgba(0,0,0,.1);
+  }
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden;display:flex;flex-direction:column}
+
+  /* Header */
+  .hdr{background:var(--un-dark);padding:0 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;height:56px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo-mark{width:36px;height:36px;background:var(--un-blue);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+  .logo h1{font-size:.95rem;font-weight:700;color:#fff;letter-spacing:.5px}
+  .logo .sub{font-size:.55rem;color:rgba(255,255,255,.6);font-weight:400;display:block;margin-top:-2px}
+  .hdr-pills{display:flex;gap:8px}
+  .pill{padding:6px 14px;border-radius:20px;font-size:.65rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:5px}
+  .pill .n{font-size:.85rem}
+  .pill.cr{background:var(--critical)}.pill.hi{background:var(--high)}.pill.mo{background:rgba(249,168,37,.85)}.pill.lo{background:var(--low)}
+  .hdr-right{display:flex;align-items:center;gap:12px}
+  .scan-badge{font-size:.55rem;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:5px}
+  .scan-dot{width:7px;height:7px;border-radius:50%;background:#4caf50;animation:pulse-dot 2s infinite}
+  @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+
+  /* Toolbar */
+  .tbar{background:var(--white);border-bottom:1px solid var(--light-border);padding:8px 20px;display:flex;align-items:center;gap:10px;flex-shrink:0;flex-wrap:wrap}
+  .tbar-group{display:flex;align-items:center;gap:4px}
+  .tbar-label{font-size:.6rem;color:var(--dim);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-right:4px}
+  .tbtn{font-size:.6rem;padding:4px 10px;border:1px solid var(--light-border);border-radius:16px;background:var(--white);color:var(--dim);cursor:pointer;font-family:inherit;font-weight:500;transition:all .15s}
+  .tbtn:hover{border-color:var(--un-blue);color:var(--un-blue)}
+  .tbtn.on{border-color:var(--un-blue);color:#fff;background:var(--un-blue)}
+  .tsep{width:1px;height:20px;background:var(--light-border);margin:0 6px}
+  .ttoggle{font-size:.6rem;padding:4px 10px;border:1px solid var(--light-border);border-radius:16px;background:var(--white);color:var(--dim);cursor:pointer;font-family:inherit;font-weight:500}
+  .ttoggle.on{border-color:var(--un-accent);color:var(--un-accent);background:var(--un-light)}
+
+  /* Main */
+  .main{flex:1;display:flex;overflow:hidden;min-height:0}
+
+  /* Map */
+  .map-wrap{flex:1;position:relative;min-width:0}
+  #map{width:100%;height:100%}
+  .leaflet-control-zoom{border:1px solid var(--light-border)!important;box-shadow:var(--shadow)!important}
+  .leaflet-control-zoom a{background:var(--white)!important;color:var(--un-dark)!important;border-color:var(--light-border)!important;font-family:'Inter',sans-serif!important}
+  .leaflet-control-attribution{display:none!important}
+
+  /* Map overlay */
+  .overlay{position:absolute;top:12px;left:12px;z-index:1000;background:rgba(255,255,255,.95);border:1px solid var(--light-border);border-radius:10px;padding:12px 14px;backdrop-filter:blur(8px);box-shadow:var(--shadow-lg);max-width:230px}
+  .overlay h3{font-size:.6rem;color:var(--un-dark);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:4px}
+  .hot-list{max-height:240px;overflow-y:auto;scrollbar-width:thin}
+  .hot{display:flex;align-items:center;gap:6px;padding:4px 0;font-size:.6rem;cursor:pointer;border-bottom:1px solid rgba(226,232,240,.5);transition:color .1s}
+  .hot:hover{color:var(--un-blue)}.hot:last-child{border:none}
+  .hdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .hdot.sc{background:var(--critical)}.hdot.sh{background:var(--high)}.hdot.sm{background:var(--moderate)}.hdot.sl{background:var(--low)}
+  .hname{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .htags{font-size:.5rem;color:var(--dim);max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hct{font-size:.48rem;color:var(--dim);background:var(--bg);padding:1px 5px;border-radius:8px}
+
+  /* Side panel */
+  .side{width:380px;flex-shrink:0;border-left:1px solid var(--light-border);display:flex;flex-direction:column;background:var(--white);overflow:hidden}
+  .tabs{display:flex;border-bottom:1px solid var(--light-border);flex-shrink:0;background:var(--bg)}
+  .tab{flex:1;padding:10px 0;text-align:center;font-size:.6rem;font-weight:600;color:var(--dim);cursor:pointer;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid transparent;transition:all .15s}
+  .tab:hover{color:var(--text)}.tab.on{color:var(--un-blue);border-bottom-color:var(--un-blue);background:var(--white)}
+  .panel{flex:1;overflow-y:auto;scrollbar-width:thin}
+
+  /* Signal cards */
+  .sig{padding:12px 16px;border-bottom:1px solid var(--light-border);cursor:pointer;transition:background .1s;position:relative}
+  .sig:hover{background:var(--un-light)}
+  .sig::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:0 2px 2px 0}
+  .sig.sc::before{background:var(--critical)}.sig.sh::before{background:var(--high)}
+  .sig.sm::before{background:var(--moderate)}.sig.sl::before{background:var(--low)}
+  .sig-link{text-decoration:none;color:inherit;display:block}
+  .sig-link:hover .sig-disease{color:var(--un-blue)}
+  .sig-top{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+  .sig-sev{font-size:.5rem;font-weight:700;padding:2px 7px;border-radius:10px;letter-spacing:.3px}
+  .sig-sev.c{background:var(--crit-bg);color:var(--critical)}.sig-sev.h{background:var(--high-bg);color:var(--high)}
+  .sig-sev.m{background:var(--mod-bg);color:#e65100}.sig-sev.lo{background:var(--low-bg);color:var(--low)}
+  .sig-disease{font-size:.7rem;font-weight:700;color:var(--text);text-transform:capitalize}
+  .sig-badges{margin-left:auto;display:flex;gap:3px}
+  .badge{font-size:.42rem;padding:2px 6px;border-radius:10px;font-weight:600}
+  .badge.who{color:var(--un-blue);background:var(--un-light)}
+  .badge.twitter{color:#1da1f2;background:#e8f5fd}
+  .badge.news{color:#7c3aed;background:#ede9fe}
+  .badge.reddit{color:#ff4500;background:#fff0e6}
+  .badge.trends{color:var(--low);background:var(--low-bg)}
+  .badge.traveler{color:#d81b60;background:#fce4ec}
+  .badge.anomaly{color:var(--critical);background:var(--crit-bg);animation:pulse-anom 1.5s infinite}
+  @keyframes pulse-anom{0%,100%{opacity:1}50%{opacity:.5}}
+  .sig-loc{font-size:.6rem;color:var(--un-accent);margin-bottom:3px;font-weight:500;cursor:pointer}
+  .sig-loc:hover{text-decoration:underline}
+  .sig-loc::before{content:'📍';font-size:.55rem;margin-right:3px}
+  .sig-sum{font-size:.55rem;color:var(--dim);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .sig-meta{display:flex;gap:10px;margin-top:4px;font-size:.48rem;color:var(--dim)}
+
+  /* Stats */
+  .stats{padding:16px}
+  .stat-sec{margin-bottom:16px}
+  .stat-sec h4{font-size:.6rem;color:var(--un-dark);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid var(--un-blue)}
+  .stat-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:.62rem}
+  .stat-row .k{color:var(--dim)}.stat-row .v{font-weight:700}
+  .sbar{height:6px;background:var(--bg);border-radius:3px;margin-top:2px;overflow:hidden}
+  .sbar-fill{height:100%;border-radius:3px;transition:width .5s}
+  .cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:.58rem}
+  .cat-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+  .cat-name{flex:1;font-weight:500}.cat-ct{font-weight:700}
+
+  /* Region cards */
+  .region-card{background:var(--bg);border:1px solid var(--light-border);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+  .region-card h5{font-size:.6rem;color:var(--un-dark);font-weight:700;margin-bottom:4px}
+  .region-card .rthreat{font-weight:800;font-size:.5rem;padding:2px 6px;border-radius:10px;margin-left:6px}
+  .region-card .rthreat.cr{background:var(--crit-bg);color:var(--critical)}
+  .region-card .rthreat.hi{background:var(--high-bg);color:var(--high)}
+  .region-stats{display:flex;gap:14px;font-size:.52rem;color:var(--dim);margin-bottom:4px}
+  .region-stats b{color:var(--text)}
+  .region-diseases{font-size:.48rem;color:var(--un-accent);font-weight:500}
+  .region-countries{font-size:.48rem;color:var(--dim);margin-top:3px}
+  .region-countries span{cursor:pointer}.region-countries span:hover{color:var(--un-blue);text-decoration:underline}
+
+  /* Pulse markers */
+  .pmk{border-radius:50%;position:relative;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .pmk::after{content:'';position:absolute;width:100%;height:100%;border-radius:50%;animation:pmk-ring 2.5s ease-out infinite}
+  .pmk.c{background:var(--critical)}.pmk.c::after{border:2px solid var(--critical)}
+  .pmk.h{background:var(--high)}.pmk.h::after{border:2px solid var(--high)}
+  .pmk.m{background:var(--moderate)}.pmk.m::after{border:2px solid var(--moderate)}
+  .pmk.lo{background:var(--low)}.pmk.lo::after{border:2px solid var(--low)}
+  @keyframes pmk-ring{0%{transform:scale(1);opacity:.4}100%{transform:scale(2.5);opacity:0}}
+
+  /* Popup */
+  .leaflet-popup-content-wrapper{background:var(--white)!important;color:var(--text)!important;border:1px solid var(--light-border)!important;border-radius:10px!important;font-family:'Inter',sans-serif!important;box-shadow:var(--shadow-lg)!important}
+  .leaflet-popup-tip{background:var(--white)!important}
+  .leaflet-popup-close-button{color:var(--dim)!important}
+  .pp-title{font-size:.72rem;font-weight:700;color:var(--un-dark);margin-bottom:2px}
+  .pp-disease{font-size:.58rem;color:var(--un-accent);margin-bottom:4px;font-weight:500}
+  .pp-info{font-size:.52rem;color:var(--dim);line-height:1.5;margin-bottom:6px}
+  .pp-info b{color:var(--text)}
+  .pp-link{display:block;color:var(--un-blue);text-decoration:none;padding:10px 8px;font-size:.7rem;font-weight:600;border-bottom:1px solid var(--light-border);border-radius:6px;margin:2px 0;transition:background .1s}
+  .pp-link:hover,.pp-link:active{background:var(--un-light);text-decoration:none}
+  .pp-link:last-child{border:none}
+
+  /* Footer */
+  .ftr{border-top:1px solid var(--light-border);padding:6px 20px;display:flex;align-items:center;justify-content:space-between;font-size:.5rem;color:var(--dim);flex-shrink:0;background:var(--white)}
+  .ftr-l{display:flex;gap:12px;align-items:center}.ftr span{display:flex;align-items:center;gap:3px}
+
+  @media(max-width:900px){.main{flex-direction:column}.side{width:100%;height:40vh;border-left:none;border-top:1px solid var(--light-border)}.map-wrap{height:60vh}.tbar{display:none}}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="logo">
+    <div class="logo-mark">🌐</div>
+    <div><h1>GeoSentinel</h1><span class="sub">Global Disease Surveillance Network 2.0</span></div>
+  </div>
+  <div class="hdr-pills">
+    <div class="pill cr"><span class="n" id="hC">—</span> Critical</div>
+    <div class="pill hi"><span class="n" id="hH">—</span> High</div>
+    <div class="pill mo"><span class="n" id="hM">—</span> Moderate</div>
+    <div class="pill lo"><span class="n" id="hL">—</span> Low</div>
+  </div>
+  <div class="hdr-right">
+    <div class="scan-badge"><span class="scan-dot"></span><span id="scanT">Loading...</span></div>
+  </div>
+</div>
+
+<div class="tbar" id="tbar">
+  <div class="tbar-group">
+    <span class="tbar-label">Source</span>
+    <button class="tbtn on" data-f="source" data-v="all">All</button>
+    <button class="tbtn" data-f="source" data-v="who">🏥 WHO</button>
+    <button class="tbtn" data-f="source" data-v="twitter">𝕏 Twitter</button>
+    <button class="tbtn" data-f="source" data-v="news">📰 News</button>
+    <button class="tbtn" data-f="source" data-v="reddit">💬 Reddit</button>
+    <button class="tbtn" data-f="source" data-v="trends">📈 Trends</button>
+  </div>
+  <div class="tsep"></div>
+  <div class="tbar-group">
+    <span class="tbar-label">Severity</span>
+    <button class="tbtn on" data-f="sev" data-v="all">All</button>
+    <button class="tbtn" data-f="sev" data-v="crit">🔴 Critical</button>
+    <button class="tbtn" data-f="sev" data-v="high">🟠 High+</button>
+  </div>
+  <div class="tsep"></div>
+  <div class="tbar-group">
+    <button class="ttoggle" id="flightToggle" onclick="toggleFlights()">✈️ Flight Routes</button>
+    <button class="ttoggle" id="travelerToggle" onclick="toggleTravelers()">🧳 Travelers Only</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="overlay">
+      <h3>⚠️ Active Hotspots</h3>
+      <div id="hotList" class="hot-list"></div>
+    </div>
+  </div>
+  <div class="side">
+    <div class="tabs">
+      <div class="tab on" data-t="signals">⚡ Signals</div>
+      <div class="tab" data-t="stats">📊 Analytics</div>
+      <div class="tab" data-t="regions">🌍 Regions</div>
+    </div>
+    <div class="panel" id="panel"></div>
+  </div>
+</div>
+
+<div class="ftr">
+  <div class="ftr-l">
+    <span>🌐 Sources: WHO · Twitter/X · News · Reddit · Google Trends</span>
+    <span>|</span><span id="fSig">—</span>
+    <span>|</span><span id="fCo">—</span>
+    <span>|</span><span id="fTrav">—</span>
+  </div>
+  <span style="color:var(--un-accent);font-weight:600">GeoSentinel 2.0 — AI-Powered Disease Surveillance</span>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+let D=null,activeTab='signals',markers=[],flightLines=[],showFlights=false,showTravelers=false;
+let filterSource='all',filterSev='all';
+
+const SEV={critical:'#d32f2f',high:'#e65100',moderate:'#f9a825',low:'#2e7d32'};
+const CAT_C={'vector-borne':'#e65100',waterborne:'#0288d1',respiratory:'#7c3aed',viral:'#d32f2f',hemorrhagic:'#b71c1c',bacterial:'#f9a825','vaccine-preventable':'#2e7d32',parasitic:'#ff6f00',unknown:'#90a4ae'};
+const SRC_I={who:'🏥',twitter:'𝕏',news:'📰',reddit:'💬',trends:'📈'};
+
+function sc(s){return s>=8?'c':s>=6?'h':s>=4?'m':'lo'}
+function sl(s){return s>=8?'critical':s>=6?'high':s>=4?'moderate':'low'}
+function esc(s){return s?s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):''}
+
+const map=L.map('map',{center:[20,15],zoom:2.5,minZoom:2,maxZoom:8,zoomControl:true,attributionControl:false,worldCopyJump:true});
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd'}).addTo(map);
+
+function flyTo(lat,lng){map.flyTo([lat,lng],5,{duration:1})}
+
+function getFiltered(){
+  if(!D)return[];
+  return D.signals.filter(s=>{
+    if(filterSource!=='all'&&s.source!==filterSource)return false;
+    if(filterSev==='crit'&&s.severity<8)return false;
+    if(filterSev==='high'&&s.severity<6)return false;
+    if(showTravelers&&!s.is_traveler)return false;
+    return true;
+  });
+}
+
+function addMarkers(){
+  markers.forEach(m=>map.removeLayer(m));markers=[];
+  if(!D)return;
+  const filt=getFiltered();
+  const locs={};
+  filt.forEach(s=>{
+    const k=s.location.iso;
+    if(!locs[k])locs[k]={...s.location,sev:0,diseases:new Set(),count:0,signals:[]};
+    locs[k].sev=Math.max(locs[k].sev,s.severity);
+    locs[k].diseases.add(s.disease);
+    locs[k].count++;
+    if(locs[k].signals.length<5)locs[k].signals.push(s);
+  });
+  Object.values(locs).forEach(h=>{
+    const c=sc(h.sev),sz=h.sev>=8?24:h.sev>=6?19:14;
+    const icon=L.divIcon({className:'',html:`<div class="pmk ${c}" style="width:${sz}px;height:${sz}px"></div>`,iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+    // If only 1 signal with a URL, clicking opens it directly
+    const singleUrl=(h.signals.length===1&&h.signals[0].url&&h.signals[0].url!=='#')?h.signals[0].url:null;
+    const sigLinks=h.signals.map(s=>{
+      const src=SRC_I[s.source]||'📡';
+      const url=s.url&&s.url!=='#'?s.url:'';
+      const label=`${src} ${(s.disease||'').charAt(0).toUpperCase()+(s.disease||'').slice(1)} — ${s.severity}/10`;
+      return url?`<a class="pp-link" href="${esc(url)}" target="_blank" rel="noopener">${label} →</a>`
+        :`<div class="pp-link">${label}</div>`;
+    }).join('');
+    const popup=`<div class="pp-title">${h.name}, ${h.country}</div><div class="pp-disease">${[...h.diseases].join(' · ')}</div><div class="pp-info">Threat: <b style="color:${SEV[sl(h.sev)]}">${sl(h.sev).toUpperCase()}</b> · ${h.count} signal${h.count>1?'s':''}</div>${sigLinks}`;
+    const mk=L.marker([h.lat,h.lng],{icon}).addTo(map);
+    if(singleUrl){mk.on('click',()=>window.open(singleUrl,'_blank'))}
+    else{mk.bindPopup(popup,{maxWidth:300})}
+    markers.push(mk);
+  });
+}
+
+function drawFlights(){
+  flightLines.forEach(l=>map.removeLayer(l));flightLines=[];
+  if(!showFlights||!D||!D.flightRoutes)return;
+  D.flightRoutes.forEach(r=>{
+    const color=r.severity>=8?'rgba(211,47,47,.25)':r.severity>=6?'rgba(230,81,0,.18)':'rgba(249,168,37,.12)';
+    const line=L.polyline([[r.from.lat,r.from.lng],[r.to.lat,r.to.lng]],{color,weight:1.5,dashArray:'6 4'}).addTo(map);
+    line.bindTooltip(`${r.from.iata} → ${r.to.iata}`,{direction:'center'});
+    flightLines.push(line);
+  });
+}
+
+function toggleFlights(){showFlights=!showFlights;document.getElementById('flightToggle').classList.toggle('on',showFlights);drawFlights()}
+function toggleTravelers(){showTravelers=!showTravelers;document.getElementById('travelerToggle').classList.toggle('on',showTravelers);refresh()}
+
+document.querySelectorAll('.tbtn[data-f]').forEach(b=>{
+  b.onclick=()=>{
+    const g=b.dataset.f;
+    document.querySelectorAll(`.tbtn[data-f="${g}"]`).forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    if(g==='source')filterSource=b.dataset.v;
+    if(g==='sev')filterSev=b.dataset.v;
+    refresh();
+  };
+});
+
+document.querySelectorAll('.tab').forEach(t=>{
+  t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');activeTab=t.dataset.t;renderPanel()};
+});
+
+function renderPanel(){if(activeTab==='signals')renderSignals();else if(activeTab==='stats')renderStats();else renderRegions()}
+
+function renderSignals(){
+  const el=document.getElementById('panel'),sigs=getFiltered();
+  if(!sigs.length){el.innerHTML='<div style="padding:30px;text-align:center;color:var(--dim);font-size:.7rem">No signals match current filters</div>';return}
+  el.innerHTML=sigs.map(s=>{
+    const c=sc(s.severity),sl2=c;
+    let badges=`<span class="badge ${s.source}">${SRC_I[s.source]||'📡'} ${s.source}</span>`;
+    if(s.is_traveler)badges+=`<span class="badge traveler">🧳 traveler</span>`;
+    if(s.anomaly)badges+=`<span class="badge anomaly">⚠️ anomaly</span>`;
+    const url=s.url||'#';
+    return `<div class="sig s${c}">
+      <a class="sig-link" href="${esc(url)}" target="_blank" rel="noopener">
+        <div class="sig-top"><span class="sig-sev ${sl2}">${s.severity}/10</span><span class="sig-disease">${s.emoji||''} ${esc(s.disease)}</span><div class="sig-badges">${badges}</div></div>
+        <div class="sig-sum">${esc(s.summary)}</div>
+      </a>
+      <div class="sig-loc" onclick="flyTo(${s.location.lat},${s.location.lng})">${esc(s.location.name)}, ${esc(s.location.country)}</div>
+      <div class="sig-meta"><span>🎯 ${(s.confidence*100).toFixed(0)}% confidence</span><span>· ${s.type.replace(/_/g,' ')}</span><span>· ${s.published||''}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function renderStats(){
+  const el=document.getElementById('panel');if(!D)return;
+  const st=D.stats,maxC=Math.max(...Object.values(st.by_category||{}),1),maxS=Math.max(...Object.values(st.by_source||{}),1);
+  let catH='';
+  Object.entries(st.by_category||{}).sort((a,b)=>b[1]-a[1]).forEach(([c,n])=>{
+    const col=CAT_C[c]||'#90a4ae';
+    catH+=`<div class="cat-row"><div class="cat-dot" style="background:${col}"></div><span class="cat-name">${c}</span><span class="cat-ct">${n}</span></div><div class="sbar"><div class="sbar-fill" style="width:${n/maxC*100}%;background:${col}"></div></div>`;
+  });
+  let srcH='';
+  Object.entries(st.by_source||{}).sort((a,b)=>b[1]-a[1]).forEach(([s,n])=>{
+    srcH+=`<div class="cat-row"><span style="font-size:.65rem">${SRC_I[s]||'📡'}</span><span class="cat-name">${s.toUpperCase()}</span><span class="cat-ct">${n}</span></div><div class="sbar"><div class="sbar-fill" style="width:${n/maxS*100}%;background:var(--un-blue)"></div></div>`;
+  });
+  el.innerHTML=`<div class="stats">
+    <div class="stat-sec"><h4>Threat Distribution</h4>
+      <div class="stat-row"><span class="k">🔴 Critical (8-10)</span><span class="v" style="color:var(--critical)">${st.by_severity.critical}</span></div>
+      <div class="sbar"><div class="sbar-fill" style="width:${st.by_severity.critical/Math.max(st.total_signals,1)*100}%;background:var(--critical)"></div></div>
+      <div class="stat-row"><span class="k">🟠 High (6-7)</span><span class="v" style="color:var(--high)">${st.by_severity.high}</span></div>
+      <div class="sbar"><div class="sbar-fill" style="width:${st.by_severity.high/Math.max(st.total_signals,1)*100}%;background:var(--high)"></div></div>
+      <div class="stat-row"><span class="k">🟡 Moderate (4-5)</span><span class="v" style="color:#e65100">${st.by_severity.moderate}</span></div>
+      <div class="sbar"><div class="sbar-fill" style="width:${st.by_severity.moderate/Math.max(st.total_signals,1)*100}%;background:var(--moderate)"></div></div>
+      <div class="stat-row"><span class="k">🟢 Low (1-3)</span><span class="v" style="color:var(--low)">${st.by_severity.low}</span></div>
+      <div class="sbar"><div class="sbar-fill" style="width:${st.by_severity.low/Math.max(st.total_signals,1)*100}%;background:var(--low)"></div></div>
+    </div>
+    <div class="stat-sec"><h4>Disease Categories</h4>${catH}</div>
+    <div class="stat-sec"><h4>Signal Sources</h4>${srcH}</div>
+    <div class="stat-sec"><h4>Coverage</h4>
+      <div class="stat-row"><span class="k">Total Signals</span><span class="v" style="color:var(--un-blue)">${st.total_signals}</span></div>
+      <div class="stat-row"><span class="k">Countries Affected</span><span class="v">${st.countries_affected}</span></div>
+      <div class="stat-row"><span class="k">Traveler Signals</span><span class="v" style="color:#d81b60">${st.traveler_signals||0}</span></div>
+      <div class="stat-row"><span class="k">Anomalies Detected</span><span class="v" style="color:var(--critical)">${st.anomalies_detected||0}</span></div>
+      <div class="stat-row"><span class="k">Scan Duration</span><span class="v">${st.scan_duration_sec||'—'}s</span></div>
+    </div>
+  </div>`;
+}
+
+function renderRegions(){
+  const el=document.getElementById('panel');if(!D)return;
+  const regions={};
+  D.hotspots.forEach(h=>{
+    const r=h.region||'Other';
+    if(!regions[r])regions[r]={name:r,hotspots:[],maxSev:0,totalSig:0,diseases:new Set()};
+    regions[r].hotspots.push(h);
+    regions[r].maxSev=Math.max(regions[r].maxSev,h.max_severity);
+    regions[r].totalSig+=h.signals;
+    h.diseases.forEach(d=>regions[r].diseases.add(d));
+  });
+  el.innerHTML='<div class="stats">'+Object.values(regions).sort((a,b)=>b.maxSev-a.maxSev).map(r=>{
+    const tc=r.maxSev>=8?'cr':'hi';
+    return `<div class="region-card">
+      <h5>${r.name}<span class="rthreat ${tc}">${sl(r.maxSev).toUpperCase()}</span></h5>
+      <div class="region-stats"><span>Hotspots: <b>${r.hotspots.length}</b></span><span>Signals: <b>${r.totalSig}</b></span></div>
+      <div class="region-diseases">${[...r.diseases].join(' · ')}</div>
+      <div class="region-countries">${r.hotspots.map(h=>`<span onclick="flyTo(${h.lat},${h.lng})">${h.name} (${h.signals})</span>`).join(' · ')}</div>
+    </div>`;
+  }).join('')+'</div>';
+}
+
+function renderHotspots(){
+  const el=document.getElementById('hotList');if(!D)return;
+  el.innerHTML=D.hotspots.slice(0,15).map(h=>{
+    const c=sc(h.max_severity);
+    return `<div class="hot" onclick="flyTo(${h.lat},${h.lng})">
+      <div class="hdot s${c}"></div>
+      <span class="hname">${h.name}</span>
+      <span class="htags">${h.diseases.slice(0,2).join(', ')}</span>
+      <span class="hct">${h.signals}</span>
+    </div>`;
+  }).join('');
+}
+
+function updateHeader(){
+  if(!D)return;const s=D.stats;
+  document.getElementById('hC').textContent=s.by_severity.critical;
+  document.getElementById('hH').textContent=s.by_severity.high;
+  document.getElementById('hM').textContent=s.by_severity.moderate;
+  document.getElementById('hL').textContent=s.by_severity.low;
+  document.getElementById('fSig').textContent=s.total_signals+' signals';
+  document.getElementById('fCo').textContent=s.countries_affected+' countries';
+  document.getElementById('fTrav').textContent='🧳 '+(s.traveler_signals||0)+' traveler signals';
+  document.getElementById('scanT').textContent='Last scan: '+new Date(D.lastScan).toLocaleTimeString();
+}
+
+function refresh(){addMarkers();drawFlights();renderHotspots();renderPanel();updateHeader()}
+
+async function loadData(){
+  try{const r=await fetch('signals.json?t='+Date.now());D=await r.json();refresh();}
+  catch(e){document.getElementById('panel').innerHTML='<div style="padding:30px;text-align:center;color:var(--critical)">⚠️ Error loading data</div>'}
+}
+loadData();setInterval(loadData,120000);
+</script>
+</body>
+</html>

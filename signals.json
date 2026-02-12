@@ -1,0 +1,4149 @@
+{
+  "version": "2.0",
+  "lastScan": "2026-02-12T02:01:58.892019+00:00",
+  "scanDuration": 54.5,
+  "signals": [
+    {
+      "id": "5b2837a40e3a",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "marburg",
+      "category": "hemorrhagic",
+      "emoji": "\ud83e\ude78",
+      "location": {
+        "lat": 9.15,
+        "lng": 40.49,
+        "name": "Ethiopia",
+        "country": "Ethiopia",
+        "iso": "ET",
+        "region": "East Africa"
+      },
+      "severity": 10,
+      "confidence": 1.0,
+      "summary": "Marburg virus disease- Ethiopia",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON592",
+      "timestamp": "2026-01-26T17:02:50Z",
+      "published": "2026-01-26",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "55ca29580e44",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "ebola",
+      "category": "hemorrhagic",
+      "emoji": "\ud83e\ude78",
+      "location": {
+        "lat": -4.04,
+        "lng": 21.76,
+        "name": "DRC",
+        "country": "DR Congo",
+        "iso": "CD",
+        "region": "Central Africa"
+      },
+      "severity": 10,
+      "confidence": 1.0,
+      "summary": "Ebola virus disease \u2013 Democratic Republic of the Congo",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON589",
+      "timestamp": "2025-12-01T13:57:19Z",
+      "published": "2025-12-01",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "1f7e4a075fce",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "nipah",
+      "category": "viral",
+      "emoji": "\ud83e\udd87",
+      "location": {
+        "lat": 23.68,
+        "lng": 90.36,
+        "name": "Bangladesh",
+        "country": "Bangladesh",
+        "iso": "BD",
+        "region": "South Asia"
+      },
+      "severity": 9,
+      "confidence": 1.0,
+      "summary": "Nipah virus infection - Bangladesh",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON594",
+      "timestamp": "2026-02-06T21:43:10Z",
+      "published": "2026-02-06",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "8298b9ee400b",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "nipah",
+      "category": "viral",
+      "emoji": "\ud83e\udd87",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 9,
+      "confidence": 1.0,
+      "summary": "Nipah virus disease - India",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON593",
+      "timestamp": "2026-01-30T16:32:57Z",
+      "published": "2026-01-30",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "44a995fc8693",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "polio",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": 9.95,
+        "lng": -9.7,
+        "name": "Guinea",
+        "country": "Guinea",
+        "iso": "GN",
+        "region": "West Africa"
+      },
+      "severity": 9,
+      "confidence": 1.0,
+      "summary": "Circulating vaccine-derived poliovirus type 2 (cVDPV2) - Papua New Guinea",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON571",
+      "timestamp": "2025-05-20T13:42:18Z",
+      "published": "2025-05-20",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "ab661164576b",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -4.04,
+        "lng": 21.76,
+        "name": "DRC",
+        "country": "DR Congo",
+        "iso": "CD",
+        "region": "Central Africa"
+      },
+      "severity": 10,
+      "confidence": 0.9,
+      "summary": "World News in Brief: School shooting in Canada, cholera outbreak in DR Congo, evacuations in Gaza | UN News The UN relief coordination office, ... worst outbreak in 25 years. Since the start of 2026, <strong>more than 1,300 suspected cases and 35 deaths have been recorded</strong>....",
+      "url": "https://news.un.org/en/story/2026/02/1166946",
+      "timestamp": "2026-02-12T02:01:08.694012+00:00",
+      "published": "4 hours ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "b8190405f282",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "bird flu",
+      "category": "respiratory",
+      "emoji": "\ud83d\udc26",
+      "location": {
+        "lat": 13.08,
+        "lng": 80.27,
+        "name": "Chennai",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 10,
+      "confidence": 0.9,
+      "summary": "Bird Flu Alert: H5N1 Spreads In Tamil Nadu And Kerala; No Human Cases In 2026 So Far | India Today - YouTube This special report addresses the rising concerns over the H5N1 bird flu outbreak in India, following the deaths of over a thousand crows in Chennai and poul...",
+      "url": "https://www.youtube.com/watch?v=TspnPZm7rE0",
+      "timestamp": "2026-02-12T02:01:12.276014+00:00",
+      "published": "6 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "1ca4d6d98d8d",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 10,
+      "confidence": 0.85,
+      "summary": "Zambia Responding to the Cholera Outbreak - Ministry of Health Luapula and Eastern Provinces have remained free of confirmed cholera cases throughout this period. The Minister who said this during a press briefing at Ndeke House noted that as of 3 February 2026, the country has recorded a cumulative",
+      "url": "https://www.moh.gov.zm/?p=7734",
+      "timestamp": "2026-02-12T02:01:08.694564+00:00",
+      "published": "18 hours ago",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "0aece938c8a7",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "nipah",
+      "category": "viral",
+      "emoji": "\ud83e\udd87",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 10,
+      "confidence": 0.85,
+      "summary": "Nipah Outbreak in India Poses Low Global Risk Despite Lack of Approved Treatments | Pharmacy Times <strong>Two confirmed infections occurred in hospital-based health care workers, prompting rapid outbreak response and intensified surveillance in North 24 Parganas, West Bengal</strong>. Contact traci",
+      "url": "https://www.pharmacytimes.com/view/nipah-outbreak-in-india-poses-low-global-risk-despite-lack-of-approved-treatments",
+      "timestamp": "2026-02-12T02:01:26.549791+00:00",
+      "published": "15 hours ago",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "1fdea32c9784",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "nipah",
+      "category": "viral",
+      "emoji": "\ud83e\udd87",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 10,
+      "confidence": 0.85,
+      "summary": "Nipah virus outbreak in India: What Texans need to know right now In India, <strong>outbreaks are periodically reported in several parts of the country, including the latest one in 2026</strong>. On January 26, the two cases were confirmed among 25-year-old nurses, a woman and a man, in West Bengal.",
+      "url": "https://www.mysanantonio.com/news/local/article/india-nipah-virus-outbreak-21319938.php",
+      "timestamp": "2026-02-12T02:01:26.549927+00:00",
+      "published": "5 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "3e742a88c443",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "h5n1",
+      "category": "respiratory",
+      "emoji": "\ud83d\udc26",
+      "location": {
+        "lat": 12.57,
+        "lng": 104.99,
+        "name": "Cambodia",
+        "country": "Cambodia",
+        "iso": "KH",
+        "region": "SE Asia"
+      },
+      "severity": 8,
+      "confidence": 1.0,
+      "summary": "Avian Influenza A(H5N1) - Cambodia",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON575",
+      "timestamp": "2025-07-05T05:49:39Z",
+      "published": "2025-07-05",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "8bc41139351f",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "anthrax",
+      "category": "bacterial",
+      "emoji": "\u2620\ufe0f",
+      "location": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "name": "Thailand",
+        "country": "Thailand",
+        "iso": "TH",
+        "region": "SE Asia"
+      },
+      "severity": 8,
+      "confidence": 1.0,
+      "summary": "Anthrax \u2013 Thailand",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON573",
+      "timestamp": "2025-05-29T16:34:32Z",
+      "published": "2025-05-29",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "fb8ff6bd5d72",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "h5n1",
+      "category": "respiratory",
+      "emoji": "\ud83d\udc26",
+      "location": {
+        "lat": 23.63,
+        "lng": -102.55,
+        "name": "Mexico",
+        "country": "Mexico",
+        "iso": "MX",
+        "region": "Latin America"
+      },
+      "severity": 8,
+      "confidence": 1.0,
+      "summary": "Avian Influenza A(H5N1) - Mexico",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON564",
+      "timestamp": "2025-04-17T15:49:08Z",
+      "published": "2025-04-17",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "35d1856e8226",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "nipah",
+      "category": "viral",
+      "emoji": "\ud83e\udd87",
+      "location": {
+        "lat": 4.21,
+        "lng": 101.98,
+        "name": "Malaysia",
+        "country": "Malaysia",
+        "iso": "MY",
+        "region": "SE Asia"
+      },
+      "severity": 10,
+      "confidence": 0.8,
+      "summary": "Nipah virus infection - Wikipedia A total of 265 cases of acute encephalitis with 105 deaths caused by the virus were reported in the three states throughout the outbreak. The Malaysian health authorities at first thought Japanese encephalitis (JE) was the cause of infection which hampered the deplo",
+      "url": "https://en.wikipedia.org/wiki/Nipah_virus_infection",
+      "timestamp": "2026-02-12T02:01:26.549705+00:00",
+      "published": "5 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "921386edb18f",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 12.86,
+        "lng": 30.22,
+        "name": "Sudan",
+        "country": "Sudan",
+        "iso": "SD",
+        "region": "East Africa"
+      },
+      "severity": 9,
+      "confidence": 0.85,
+      "summary": "APO Group - Africa Newsroom / Press release | Sustained response curbing cholera outbreak in South Sudan <strong>South Sudan</strong> is currently conducting a post-campaign coverage survey to document reasons for missed vaccination to improve future campaigns ... <strong>South Sudan</strong>\u2019s sust",
+      "url": "https://www.africa-newsroom.com/press/sustained-response-curbing-cholera-outbreak-in-south-sudan?lang=en",
+      "timestamp": "2026-02-12T02:01:08.694427+00:00",
+      "published": "2 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "0ee8c482ff82",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 9,
+      "confidence": 0.85,
+      "summary": "15 cholera cases in 3 days in Jamnagar, pipeline leakage suspected| India News The cholera cases come nearly a month after a typhoid outbreak in Gandhinagar exposed cracks in water and sanitation infrastructure in the state capital. Multiple leaks in water and sewage pipelines were reported across t",
+      "url": "https://www.hindustantimes.com/india-news/15-cholera-cases-in-3-days-in-jamnagar-pipeline-leakage-suspected-101770731793641.html",
+      "timestamp": "2026-02-12T02:01:22.823818+00:00",
+      "published": "2 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "24a6add5e931",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "lassa fever",
+      "category": "hemorrhagic",
+      "emoji": "\ud83e\ude78",
+      "location": {
+        "lat": 9.08,
+        "lng": 7.49,
+        "name": "Nigeria",
+        "country": "Nigeria",
+        "iso": "NG",
+        "region": "West Africa"
+      },
+      "severity": 9,
+      "confidence": 0.85,
+      "summary": "Nigeria: No Lassa Fever Outbreak in NYSC Camp - Kwara Govt - allAfrica.com Kamaldeen said that findings from the field investigation and the retrospective active case search revealed that no cases of Lassa fever were identified among corps members and camp officials.",
+      "url": "https://allafrica.com/stories/202602110129.html",
+      "timestamp": "2026-02-12T02:01:30.417553+00:00",
+      "published": "18 hours ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "bd48b831cbac",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "polio",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 10,
+      "confidence": 0.75,
+      "summary": "Polio eradication - Wikipedia <strong>In 2002, an outbreak of polio occurred in India</strong>. The number of planned polio vaccination campaigns had recently been reduced, and populations in northern India, particularly from the Islamic background, engaged in mass resistance to immunization. At thi",
+      "url": "https://en.wikipedia.org/wiki/Polio_eradication",
+      "timestamp": "2026-02-12T02:01:32.243809+00:00",
+      "published": "1 day ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "19b32d5afff1",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "rift valley fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 14.5,
+        "lng": -14.45,
+        "name": "Senegal",
+        "country": "Senegal",
+        "iso": "SN",
+        "region": "West Africa"
+      },
+      "severity": 7,
+      "confidence": 1.0,
+      "summary": "Rift Valley fever- Mauritania and Senegal",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON584",
+      "timestamp": "2025-11-05T15:38:08Z",
+      "published": "2025-11-05",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "ebf3692119f0",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "marburg",
+      "category": "hemorrhagic",
+      "emoji": "\ud83e\ude78",
+      "location": {
+        "lat": -4.04,
+        "lng": 21.76,
+        "name": "DRC",
+        "country": "DR Congo",
+        "iso": "CD",
+        "region": "Central Africa"
+      },
+      "severity": 10,
+      "confidence": 0.7,
+      "summary": "Ebola - Wikipedia It is able to confirm Ebola in 92% of those affected and rule it out in 85% of those not affected. Early symptoms of EVD may be similar to those of other diseases common in Africa, including malaria and dengue fever. The symptoms are also similar to those of other viral haemorrhagi",
+      "url": "https://en.wikipedia.org/wiki/Ebola",
+      "timestamp": "2026-02-12T02:01:21.084180+00:00",
+      "published": "2 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "353f3a2d0a18",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "malaria",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -12.05,
+        "lng": -77.04,
+        "name": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "region": "Latin America"
+      },
+      "severity": 8,
+      "confidence": 0.85,
+      "summary": "Climate change could lead to 500,000 \u2018additional\u2019 malaria deaths in Africa by 2050 | News | Eco-Business | Asia Pacific <strong>Increase in clinical cases of malaria projected across Africa over the next 25 years</strong>, broken down into the different drivers of malaria risk. Blue shading indicate",
+      "url": "https://www.eco-business.com/news/climate-change-could-lead-to-500000-additional-malaria-deaths-in-africa-by-2050/",
+      "timestamp": "2026-02-12T02:01:10.497837+00:00",
+      "published": "1 week ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "470c0ccde404",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -13.13,
+        "lng": 27.85,
+        "name": "Zambia",
+        "country": "Zambia",
+        "iso": "ZM",
+        "region": "Southern Africa"
+      },
+      "severity": 9,
+      "confidence": 0.75,
+      "summary": "Faecal Coliforms and Escherichia coli Contamination in Drinking Water Sources in Cholera Hotspot Areas of Lusaka District, Zambia: A Cross-Sectional Study The <strong>October 2023 to 2024</strong> cholera outbreak demonstrates significant challenges related to water quality and sanitation, especiall",
+      "url": "https://www.mdpi.com/2076-2607/14/2/420",
+      "timestamp": "2026-02-12T02:01:08.694763+00:00",
+      "published": "1 day ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "39563f73a449",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "h5n1",
+      "category": "respiratory",
+      "emoji": "\ud83d\udc26",
+      "location": {
+        "lat": 13.08,
+        "lng": 80.27,
+        "name": "Chennai",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 9,
+      "confidence": 0.75,
+      "summary": "Chennai H5N1 outbreak: Hundreds of crows found dead, government issues advisory - Chennai News | India Today Chennai,UPDATED: Feb 6, 2026 11:45 IST \u00b7 Edited By: Ajmal Abbas \u00b7 <strong>An outbreak of the H5N1 virus has been confirmed in Chennai after several hundred crows were found dead across the ci",
+      "url": "https://www.indiatoday.in/cities/chennai/story/crow-deaths-chennai-h5n1-avian-influenza-outbreak-containment-health-advisory-issued-2863948-2026-02-06",
+      "timestamp": "2026-02-12T02:01:12.275783+00:00",
+      "published": "6 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "5a394a0bc1a9",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 9,
+      "confidence": 0.7,
+      "summary": "Countries at Risk for Yellow Fever: South America | Yellow Fever Virus | CDC Factors to consider when deciding whether to vaccinate a traveler include destination-specific and travel-associated risks for yellow fever virus infection; individual, underlying risk factors for having a serious yellow fe",
+      "url": "https://www.cdc.gov/yellow-fever/south-america/index.html",
+      "timestamp": "2026-02-12T02:01:28.590635+00:00",
+      "published": "2 days ago",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "a0163908c277",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "polio",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": 30.38,
+        "lng": 69.35,
+        "name": "Pakistan",
+        "country": "Pakistan",
+        "iso": "PK",
+        "region": "South Asia"
+      },
+      "severity": 9,
+      "confidence": 0.7,
+      "summary": "Countries with Polio 2026 Today, polio is endemic in only two of the world\u2019s countries: <strong>Afghanistan and Pakistan</strong>. Even in these locations, aggressive vaccination efforts have dropped the number of cases to a handful a year.",
+      "url": "https://worldpopulationreview.com/country-rankings/countries-with-polio",
+      "timestamp": "2026-02-12T02:01:32.243455+00:00",
+      "published": "1 day ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "9aaa4652dd83",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "measles",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": 31.79,
+        "lng": -7.09,
+        "name": "Morocco",
+        "country": "Morocco",
+        "iso": "MA",
+        "region": "North Africa"
+      },
+      "severity": 6,
+      "confidence": 1.0,
+      "summary": "Measles - Morocco",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON568",
+      "timestamp": "2025-05-13T13:55:16Z",
+      "published": "2025-05-13",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "a2dd16437fa7",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "measles",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 7,
+      "confidence": 0.85,
+      "summary": "Seven Countries Lead the Americas in Measles Cases in 2026 \u2014 Vax-Before-Travel To alert international travelers to this serious health risk in 2026, the U.S. CDC continues to issue a Level 1 Travel Health Notice, which identifies numerious countries facing <strong>measles outbreaks</strong>.",
+      "url": "https://www.vax-before-travel.com/2026/02/07/seven-countries-lead-americas-measles-cases-2026",
+      "timestamp": "2026-02-12T02:01:05.182710+00:00",
+      "published": "4 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "06cf2225ebf0",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -0.02,
+        "lng": 37.91,
+        "name": "Kenya",
+        "country": "Kenya",
+        "iso": "KE",
+        "region": "East Africa"
+      },
+      "severity": 8,
+      "confidence": 0.7,
+      "summary": "Yellow Fever Countries 2026 Countries with the highest occurrence of yellow fever and in which vaccination is highly recommended include Ethiopia, Sudan, South Sudan, Chad, Niger, Nigeria, Cameroon, Central African Republic, Benin, Togo, Ghana, Liberia, Cote d\u2019Ivoire, Burkina Faso, Mali, Mauritania,",
+      "url": "https://worldpopulationreview.com/country-rankings/yellow-fever-countries",
+      "timestamp": "2026-02-12T02:01:28.590545+00:00",
+      "published": "1 day ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "c093b825388f",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -30.56,
+        "lng": 22.94,
+        "name": "South Africa",
+        "country": "South Africa",
+        "iso": "ZA",
+        "region": "Southern Africa"
+      },
+      "severity": 9,
+      "confidence": 0.6,
+      "summary": "South Africa on High Alert as Cholera Outbreak Hits Neighboring Zimbabwe\n\nIn a recent development, the Department of Health has issued a warning to the South African public to remain vigilant following a cholera outbreak in neighboring Zimbabwe. As cross-border travel is expected",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.804806+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "4a5b321b7130",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -19.02,
+        "lng": 29.15,
+        "name": "Zimbabwe",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "region": "Southern Africa"
+      },
+      "severity": 9,
+      "confidence": 0.6,
+      "summary": "Omani issues travel warning to Zimbabwe over cholera\u00a0outbreak https://t.co/ErrFipjZLE https://t.co/ClK6WoTodr",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.805323+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "9f0bfd090e1b",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 6.61,
+        "lng": 20.94,
+        "name": "CAR",
+        "country": "Central African Republic",
+        "iso": "CF",
+        "region": "Central Africa"
+      },
+      "severity": 9,
+      "confidence": 0.6,
+      "summary": "@mymacaroon @timfisher46 @cholatera @theresa_may You voted to go on holiday. We\u2019re sending you to a hotel with countless bad reviews on Tripadvisor, in a country with a red alert \u2018Do Not Travel\u2019 warning from the Foreign Office. They currently have a cholera outbreak. Oh, &amp; pa",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.805715+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "c0e6a8a2fd3c",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 9.08,
+        "lng": 7.49,
+        "name": "Nigeria",
+        "country": "Nigeria",
+        "iso": "NG",
+        "region": "West Africa"
+      },
+      "severity": 9,
+      "confidence": 0.6,
+      "summary": "#TRAVEL WARNING #Cholera Outbreak Kills Scores in #nigeria http://t.co/qOrTSqmQXq  @SERAPH1",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.806133+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "bab6dbaa0346",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 21.52,
+        "lng": -77.78,
+        "name": "Cuba",
+        "country": "Cuba",
+        "iso": "CU",
+        "region": "Caribbean"
+      },
+      "severity": 9,
+      "confidence": 0.6,
+      "summary": "US Issues Travel Warning About Cholera Outbreak In Cuba - Fox News Latino  #traveladvisory http://t.co/JfsrKD8zp5",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.806188+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "f339b9eb70a6",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "measles",
+      "category": "vaccine-preventable",
+      "emoji": "\ud83d\udc89",
+      "location": {
+        "lat": 6.61,
+        "lng": 20.94,
+        "name": "CAR",
+        "country": "Central African Republic",
+        "iso": "CF",
+        "region": "Central Africa"
+      },
+      "severity": 7,
+      "confidence": 0.75,
+      "summary": "What to Know About Measles as Cases Rise: Symptoms, Vaccine and More - The New York Times In 2026, there are few signs so far of the virus slowing down. <strong>In South Carolina, a major outbreak has sickened more than 900 people</strong>, most of them children, since it began last fall.",
+      "url": "https://www.nytimes.com/2026/02/09/well/measles-symptoms-vaccine.html",
+      "timestamp": "2026-02-12T02:01:13.955293+00:00",
+      "published": "2 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "c586d9038106",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "unknown",
+      "category": "unknown",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": 23.89,
+        "lng": 45.08,
+        "name": "Saudi Arabia",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "region": "Middle East"
+      },
+      "severity": 5,
+      "confidence": 1.0,
+      "summary": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON569",
+      "timestamp": "2025-05-12T17:56:18Z",
+      "published": "2025-05-12",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "94d8a13978d0",
+      "source": "who",
+      "type": "official_alert",
+      "disease": "unknown",
+      "category": "unknown",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": 1.37,
+        "lng": 32.29,
+        "name": "Uganda",
+        "country": "Uganda",
+        "iso": "UG",
+        "region": "East Africa"
+      },
+      "severity": 5,
+      "confidence": 1.0,
+      "summary": "Sudan virus disease \u2013 Uganda",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON566",
+      "timestamp": "2025-04-26T10:38:47Z",
+      "published": "2025-04-26",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "cbf70ddbcf1d",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -4.04,
+        "lng": 21.76,
+        "name": "DRC",
+        "country": "DR Congo",
+        "iso": "CD",
+        "region": "Central Africa"
+      },
+      "severity": 9,
+      "confidence": 0.55,
+      "summary": "@Mohamme80817501 @mustafa_zi945 @MaryRoss815 @CharlieSimpsonA Never had an issue I needed it for except to travel in Africa to places like Congo for yellow fever and Malaria. I've had Covid a few times. My immunity is great. Unlike all the shit coming out now with those who got j",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:36.244887+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "f52a3b410c9d",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -14.24,
+        "lng": -51.93,
+        "name": "Brazil",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 9,
+      "confidence": 0.55,
+      "summary": "@alexischateau_ Well it kinds does, maybe not vaccine, but when I wanted to travel to Africa (multi country tour) 6 weeks before my flight i was given like 4 shots, malaria, typhoid, yellow fever and supm else. When going to Brazil back in 2015 I got 2. Wasn't vaccine more like b",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:36.246001+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "315eb61dcdfe",
+      "source": "news",
+      "type": "traveler_report",
+      "disease": "dengue",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 22.32,
+        "lng": 114.17,
+        "name": "Hong Kong",
+        "country": "China",
+        "iso": "CN",
+        "region": "East Asia"
+      },
+      "severity": 6,
+      "confidence": 0.8,
+      "summary": "Hong Kong Travelers Beware of Dengue Fever in 2026 \u2014 Vax-Before-Travel In an update posted on February 5, 2026, the Travel Health Service reiterated that Dengue remains a persistent threat in many tropical and subtropical regions. As of early 2026, there have been <strong>six reported imported cases",
+      "url": "https://www.vax-before-travel.com/2026/02/09/hong-kong-travelers-beware-dengue-fever-2026",
+      "timestamp": "2026-02-12T02:01:06.893300+00:00",
+      "published": "2 days ago",
+      "is_traveler": true,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "adcf276a3cc9",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "dengue",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -38.42,
+        "lng": -63.62,
+        "name": "Argentina",
+        "country": "Argentina",
+        "iso": "AR",
+        "region": "Latin America"
+      },
+      "severity": 8,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'dengue travel' search interest at 100/100 in Argentina",
+      "url": "https://trends.google.com/trends/explore?q=dengue%20travel",
+      "timestamp": "2026-02-12T02:01:57.763024+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 100,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "a8aaf3e731b3",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "dengue",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 12.88,
+        "lng": 121.77,
+        "name": "Philippines",
+        "country": "Philippines",
+        "iso": "PH",
+        "region": "SE Asia"
+      },
+      "severity": 8,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'dengue travel' search interest at 100/100 in Philippines",
+      "url": "https://trends.google.com/trends/explore?q=dengue%20travel",
+      "timestamp": "2026-02-12T02:01:57.763133+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 100,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "242bf7503874",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "travel",
+      "category": "unknown",
+      "emoji": "\ud83d\udcc8",
+      "location": {
+        "lat": 1.35,
+        "lng": 103.82,
+        "name": "Singapore",
+        "country": "Singapore",
+        "iso": "SG",
+        "region": "SE Asia"
+      },
+      "severity": 8,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'travel illness' search interest at 100/100 in Singapore",
+      "url": "https://trends.google.com/trends/explore?q=travel%20illness",
+      "timestamp": "2026-02-12T02:01:58.888939+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 100,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "7dfb958424f3",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "travel",
+      "category": "unknown",
+      "emoji": "\ud83d\udcc8",
+      "location": {
+        "lat": 55.38,
+        "lng": -3.44,
+        "name": "UK",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "region": "Europe"
+      },
+      "severity": 7,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'travel illness' search interest at 77/100 in United Kingdom",
+      "url": "https://trends.google.com/trends/explore?q=travel%20illness",
+      "timestamp": "2026-02-12T02:01:58.889010+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 77,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "45b5282bc9e0",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "dengue",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 6,
+      "confidence": 0.7,
+      "summary": "Dengue cases down in January 2026 vs January 2025 \u2014 DOH | GMA News Online In a radio interview on Saturday, the DOH said the country recorded only <strong>7,471 dengue cases from January 4 to 24, 2026</strong>\u2014significantly lower than the 25,652 cases reported during the same period in 2025.",
+      "url": "https://www.gmanetwork.com/news/topstories/nation/975766/dengue-cases-down-in-january-2026-vs-january-2025-doh/story/",
+      "timestamp": "2026-02-12T02:01:06.893764+00:00",
+      "published": "5 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "ed1273676a7e",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 18.97,
+        "lng": -72.29,
+        "name": "Haiti",
+        "country": "Haiti",
+        "iso": "HT",
+        "region": "Caribbean"
+      },
+      "severity": 8,
+      "confidence": 0.5,
+      "summary": "@idlr_aurelus @TIME Haiti has no infrastructure, no resorts; a Cholera outbreak a few years ago; the lowest standard of living of the Western Hemisphere; it is in the middle of a violent civilian unrest and you are saying a Travel warning would be because of discrimination??",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.805253+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "567da27d299c",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 8,
+      "confidence": 0.5,
+      "summary": "I was PNG\u2019d by Bangladesh for reporting on a dual outbreak of cholera and hepatitis A. Their Minister of health accused me of trying to destroy their economy after the Italian government issued a travel warning. It\u2019s loads of fun and the hate mail was hilarious! https://t.co/NW9U",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.805459+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "1c1cb3cf18f1",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 18.74,
+        "lng": -70.16,
+        "name": "Dominican Republic",
+        "country": "Dominican Republic",
+        "iso": "DO",
+        "region": "Caribbean"
+      },
+      "severity": 8,
+      "confidence": 0.5,
+      "summary": "HealthWarning: Watch - Cholera in the Dominican Republic: An outbreak of cholera has been ong... http://t.co/6Gkdkf6w9b #travel #warning",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.805869+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "407981881c41",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "cholera",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 7.95,
+        "lng": -1.02,
+        "name": "Ghana",
+        "country": "Ghana",
+        "iso": "GH",
+        "region": "West Africa"
+      },
+      "severity": 8,
+      "confidence": 0.5,
+      "summary": "@dfat reissued its advisory for Ghana, warning travellers of a confirmed outbreak of cholera in the country.",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:42.806022+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "5d7b4a3239cb",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 55.38,
+        "lng": -3.44,
+        "name": "UK",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "region": "Europe"
+      },
+      "severity": 8,
+      "confidence": 0.45,
+      "summary": "@1keydonkey Work colleague had Covid October now got it again positive today so I would have reservations. I assume you don't travel much outside of the UK Africa etc ?? Or do you refuse yellow fever, hepatitis, malaria, jabs also ?? Given these are purely for vacation or busines",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:36.245553+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "9fc7c2520aa6",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "chikungunya",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 35.86,
+        "lng": 104.2,
+        "name": "China",
+        "country": "China",
+        "iso": "CN",
+        "region": "East Asia"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "The CDC has issued a Level 2 travel alert due to an outbreak of chikungunya in China, advising travelers to take enhanced precautions. https://t.co/i6SEe5ZmyO",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:38.828239+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "fcba13d6d866",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "dengue",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -2.5,
+        "lng": 118.0,
+        "name": "Indonesia",
+        "country": "Indonesia",
+        "iso": "ID",
+        "region": "SE Asia"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'dengue travel' search interest at 68/100 in Indonesia",
+      "url": "https://trends.google.com/trends/explore?q=dengue%20travel",
+      "timestamp": "2026-02-12T02:01:57.763178+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 68,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "3f999da6afca",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "malaria",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 55.38,
+        "lng": -3.44,
+        "name": "UK",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "region": "Europe"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'malaria travel' search interest at 67/100 in United Kingdom",
+      "url": "https://trends.google.com/trends/explore?q=malaria%20travel",
+      "timestamp": "2026-02-12T02:01:57.763524+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 67,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "480b3cdf1b6f",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "malaria",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 46.23,
+        "lng": 2.21,
+        "name": "France",
+        "country": "France",
+        "iso": "FR",
+        "region": "Europe"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'malaria travel' search interest at 66/100 in France",
+      "url": "https://trends.google.com/trends/explore?q=malaria%20travel",
+      "timestamp": "2026-02-12T02:01:57.763613+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 66,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "e0a20147d1b8",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "malaria",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 51.17,
+        "lng": 10.45,
+        "name": "Germany",
+        "country": "Germany",
+        "iso": "DE",
+        "region": "Europe"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'malaria travel' search interest at 66/100 in Germany",
+      "url": "https://trends.google.com/trends/explore?q=malaria%20travel",
+      "timestamp": "2026-02-12T02:01:57.763662+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 66,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "e6f4320b4b8f",
+      "source": "trends",
+      "type": "search_spike",
+      "disease": "travel",
+      "category": "unknown",
+      "emoji": "\ud83d\udcc8",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 6,
+      "confidence": 0.6,
+      "summary": "Google Trends: 'travel illness' search interest at 70/100 in India",
+      "url": "https://trends.google.com/trends/explore?q=travel%20illness",
+      "timestamp": "2026-02-12T02:01:58.889058+00:00",
+      "published": "last 7 days",
+      "is_traveler": true,
+      "trend_score": 70,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "8ff87316b9ad",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "mpox",
+      "category": "viral",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 5,
+      "confidence": 0.7,
+      "summary": "Mpox \u00e0 La R\u00e9union : 2 cas confirm\u00e9s et une campagne de vaccination lanc\u00e9e en urgence ! La variole du singe, d\u00e9sormais appel\u00e9e Mpox, refait parler d\u2019elle \u00e0 La R\u00e9union. Apr\u00e8s la confirmation d\u2019un premier cas fin janvier, <strong>un deuxi\u00e8me cas import\u00e9 a \u00e9t\u00e9 identifi\u00e9 le 10 f\u00e9vrier 2026</strong>.",
+      "url": "https://www.passeportsante.net/actualites/2026?doc=mpox-reunion-deuxieme-cas-vaccination",
+      "timestamp": "2026-02-12T02:01:15.757151+00:00",
+      "published": "14 hours ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "82a85ec8547f",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "mpox",
+      "category": "viral",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": 9.08,
+        "lng": 7.49,
+        "name": "Nigeria",
+        "country": "Nigeria",
+        "iso": "NG",
+        "region": "West Africa"
+      },
+      "severity": 5,
+      "confidence": 0.7,
+      "summary": "From Emergency to Endurance: What It Will Take to Sustain Mpox Control in Africa - Nigeria Health Watch As of 13 August 2024, at least ... the bigger question was always what happens when the emergency label is removed. By <strong>22 January 2026</strong>, the landscape had shifted....",
+      "url": "https://articles.nigeriahealthwatch.com/from-emergency-to-endurance-what-it-will-take-to-sustain-mpox-control-in-africa/",
+      "timestamp": "2026-02-12T02:01:15.757645+00:00",
+      "published": "14 hours ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "cde9c87da664",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "chikungunya",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 21.52,
+        "lng": -77.78,
+        "name": "Cuba",
+        "country": "Cuba",
+        "iso": "CU",
+        "region": "Caribbean"
+      },
+      "severity": 5,
+      "confidence": 0.7,
+      "summary": "Recent Florida Cases of Chikungunya Linked to Cuba Travelers, Reminder Vector-Borne Illness is Still Circulating | Contagion Live \u201cAlmost all the patients in the ... often have severe joint pain, which can be what triggers to think specifically about <strong>Chikungunya virus</strong>,\u201d said Andrew ",
+      "url": "https://www.contagionlive.com/view/recent-florida-cases-of-chikungunya-linked-to-cuba-travelers-reminder-vector-borne-illness-is-still-circulating",
+      "timestamp": "2026-02-12T02:01:17.582180+00:00",
+      "published": "4 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "3e6c3e3271aa",
+      "source": "news",
+      "type": "outbreak_report",
+      "disease": "chikungunya",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 55.38,
+        "lng": -3.44,
+        "name": "UK",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "region": "Europe"
+      },
+      "severity": 5,
+      "confidence": 0.7,
+      "summary": "Health warning to tourists on \u2018island paradise\u2019 - \u2018severe pain' | World | News | Express.co.uk &quot;Between early December 2025 and 30 January 2026, GeoSentinel surveillance reported nine confirmed and four probable cases of <strong>chikungunya virus</strong> disease in European travellers returnin",
+      "url": "https://www.express.co.uk/news/world/2169637/health-warning-tourists-island-paradise-Seychelles",
+      "timestamp": "2026-02-12T02:01:19.273336+00:00",
+      "published": "11 hours ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "22e9f8275463",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "covid",
+      "category": "respiratory",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 6,
+      "confidence": 0.55,
+      "summary": "@JGillRay @drebre2021 @shadowleaves Repeat infections are still infections and violate zero covid, I presume. So even if the vaccination and prior infection rates are 100%, HK will still need to keep running the isolation and inbound traveler quarantine facilities. What am I miss",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:45.052740+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "a0ff37c4d3b0",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "yellow fever",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": -6.17,
+        "lng": 39.2,
+        "name": "Zanzibar",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "region": "East Africa"
+      },
+      "severity": 8,
+      "confidence": 0.4,
+      "summary": "Do you need to be vaccinated and take malaria medication to go to Tanzania and Zanzibar? : r/travel Happy travels! ... Sorry, this post was deleted by the person who originally posted it. Share ... The yellow fever vaccine is necessary if you&#x27;re coming from a country where it is endemic (ex. Ke",
+      "url": "https://www.reddit.com/r/travel/comments/1qzoqnh/do_you_need_to_be_vaccinated_and_take_malaria/",
+      "timestamp": "2026-02-12T02:01:48.940189+00:00",
+      "published": "3 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "21e37da2d600",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "malaria",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 46.23,
+        "lng": 2.21,
+        "name": "France",
+        "country": "France",
+        "iso": "FR",
+        "region": "Europe"
+      },
+      "severity": 7,
+      "confidence": 0.4,
+      "summary": "r/travel on Reddit: The series of unfortunate events that was my first overseas trip Was in France and taking my first flight to Africa to go on safari. Lost the antimalarial tablets. Boyfriend bought some replacements at a pharmacy. Directions were in French but he studied French for years in schoo",
+      "url": "https://www.reddit.com/r/travel/comments/1qxb066/the_series_of_unfortunate_events_that_was_my/",
+      "timestamp": "2026-02-12T02:01:48.940449+00:00",
+      "published": "6 days ago",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "4d1f5d5412b6",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "typhoid",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 20.59,
+        "lng": 78.96,
+        "name": "India",
+        "country": "India",
+        "iso": "IN",
+        "region": "South Asia"
+      },
+      "severity": 6,
+      "confidence": 0.45,
+      "summary": "@Notnotrpscelzo So I don't want hepatitis A or typhoid fever while traveling in Bangladesh or India so I'm getting vaccinated.  Historically I've been sick for 5-7 days after getting the flu vaccine but I was totally fine this time.",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:34.531529+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "cc4e41beeb4b",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "hepatitis a",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 55.38,
+        "lng": -3.44,
+        "name": "UK",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "region": "Europe"
+      },
+      "severity": 5,
+      "confidence": 0.45,
+      "summary": "Been eating street food in every city I\u2019m at! No food poisoning so far!!!! \ud83c\udf62\ud83e\udd61\n\nPharmacist\u2019s tip: get travel vaccine before you go! I got hepatitis A shot and Dukoral powder to prevent E.coli! And bring some anti diarrhea meds with you like pepto bismol!! https://t.co/75TkG4FuIA",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:37.759853+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "a38b50ad8233",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "chikungunya",
+      "category": "vector-borne",
+      "emoji": "\ud83e\udd9f",
+      "location": {
+        "lat": 23.63,
+        "lng": -102.55,
+        "name": "Mexico",
+        "country": "Mexico",
+        "iso": "MX",
+        "region": "Latin America"
+      },
+      "severity": 5,
+      "confidence": 0.45,
+      "summary": "More cases of Chikungunya virus in US\nCDC to issue a level 2 travel warning for China, Brazil, Mexico &amp; others.\nThe virus can cause sudden, agonizing joint pain in the hands &amp; feet that it leaves sufferers unable to move normally for months\nhttps://t.co/GfMjZMBE9H via @Da",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:38.827875+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "c9a4c57e747b",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "covid",
+      "category": "respiratory",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": 35.86,
+        "lng": 104.2,
+        "name": "China",
+        "country": "China",
+        "iso": "CN",
+        "region": "East Asia"
+      },
+      "severity": 5,
+      "confidence": 0.45,
+      "summary": "US records more cases of virus prompting Covid-era restrictions in China... prompting travel warning https://t.co/twdXeUtaqr via https://t.co/ft5Jcq2hOb",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:38.828015+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "567c04463927",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "covid",
+      "category": "respiratory",
+      "emoji": "\ud83e\udda0",
+      "location": {
+        "lat": 6.61,
+        "lng": 20.94,
+        "name": "CAR",
+        "country": "Central African Republic",
+        "iso": "CF",
+        "region": "Central Africa"
+      },
+      "severity": 5,
+      "confidence": 0.45,
+      "summary": "Albany County confirmed 126 new #COVID19 cases, 97 w/o a clear infection source, 26 w/close contacts to positive cases, 2 healthcare workers/congregate living setting residents, 1 traveler. 563 active cases. 1,169 people are quarantined. 77 people were released from quarantine.",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:45.053356+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "e9f759bf0ecf",
+      "source": "twitter",
+      "type": "traveler_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 23.63,
+        "lng": -102.55,
+        "name": "Mexico",
+        "country": "Mexico",
+        "iso": "MX",
+        "region": "Latin America"
+      },
+      "severity": 4,
+      "confidence": 0.55,
+      "summary": "@leonardaisfunE You have to travel to Mexico, a known cartel ran country, to get the authentic diarrhea that only real Mexican food can give you. The risk of food poisoning just adds to the excitement.",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:37.760180+00:00",
+      "published": "",
+      "is_traveler": true,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "39cd1a3580af",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "fever",
+      "category": "unknown",
+      "emoji": "\ud83c\udf21\ufe0f",
+      "location": {
+        "lat": 6.61,
+        "lng": 20.94,
+        "name": "CAR",
+        "country": "Central African Republic",
+        "iso": "CF",
+        "region": "Central Africa"
+      },
+      "severity": 4,
+      "confidence": 0.45,
+      "summary": "Did you enjoy a winter trip? If you recently traveled and feel sick,\u202fparticularly if you have a fever, talk to your healthcare provider and tell them about your travel. \nFor more information about health after traveling: https://t.co/nBjAc65x9P https://t.co/KPFcSPVxNe",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:34.531311+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "e738d9cc2a77",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "fever",
+      "category": "unknown",
+      "emoji": "\ud83c\udf21\ufe0f",
+      "location": {
+        "lat": 36.2,
+        "lng": 138.25,
+        "name": "Japan",
+        "country": "Japan",
+        "iso": "JP",
+        "region": "East Asia"
+      },
+      "severity": 4,
+      "confidence": 0.45,
+      "summary": "I've finally landed in Houston after 24h+ of traveling. I got sick my last night in Japan so this is how I feel dealing w/ a fever, sore throat, possible ear infection, stuffy nose and lugging around 4 packed bags through 3 different airports. This shit sucks bru https://t.co/GoT",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:34.531715+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "84c5af50d133",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "fever",
+      "category": "unknown",
+      "emoji": "\ud83c\udf21\ufe0f",
+      "location": {
+        "lat": 23.63,
+        "lng": -102.55,
+        "name": "Mexico",
+        "country": "Mexico",
+        "iso": "MX",
+        "region": "Latin America"
+      },
+      "severity": 4,
+      "confidence": 0.45,
+      "summary": "U.S. health authorities have issued a travel advisory for Mexico following reports of a deadly tick-borne illness.\nFive people were hospitalized with Rocky Mountain Spotted Fever in Southern California after recent travel to the Mexican state of Baja California. Three of them die",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:41.364287+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "ce98fde0ac8a",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 39.4,
+        "lng": -8.22,
+        "name": "Portugal",
+        "country": "Portugal",
+        "iso": "PT",
+        "region": "Europe"
+      },
+      "severity": 3,
+      "confidence": 0.45,
+      "summary": "@J_RomanceWriter Last leg of first-ever flight travel. Age 17.  18-seat prop powered pencil tube. SLC to Ely, NV. Returning from Portugal with food poisoning,and explosive diarrhea. 95 degrees. Severe Turbulence forced low level flight, following Hwy. 50. Forest fire smoke. One. ",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:37.761188+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "585f3b09cfd9",
+      "source": "twitter",
+      "type": "symptom_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": -22.91,
+        "lng": -43.17,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "iso": "BR",
+        "region": "Latin America"
+      },
+      "severity": 3,
+      "confidence": 0.45,
+      "summary": "I had a severe case of food poisoning 2 days before my @AirIndiaX flight, due to which I was hospitalized and was unable to travel. I applied for a medical refund, to which they have replied that \"your illness is not serious enough for us to refund\". https://t.co/jQ6Ez92cIL",
+      "url": "",
+      "timestamp": "2026-02-12T02:01:41.363153+00:00",
+      "published": "",
+      "is_traveler": false,
+      "anomaly": false,
+      "anomaly_factor": null
+    },
+    {
+      "id": "d90784c85141",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "diarrhea",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 35.86,
+        "lng": 104.2,
+        "name": "China",
+        "country": "China",
+        "iso": "CN",
+        "region": "East Asia"
+      },
+      "severity": 3,
+      "confidence": 0.4,
+      "summary": "r/chinatravel on Reddit: Travelling for 2 months all over china, what should I bring? Most importantly\u2026 <strong>Bring your own medicine for common cold, anti-diarrhea, pain killers, and other remedies</strong>. Two months of travelling will be very tiring and easy to get sick. A lot of tourists aren",
+      "url": "https://www.reddit.com/r/chinatravel/comments/1qxunlq/travelling_for_2_months_all_over_china_what/",
+      "timestamp": "2026-02-12T02:01:45.546264+00:00",
+      "published": "5 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "2635fd530b35",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "name": "Thailand",
+        "country": "Thailand",
+        "iso": "TH",
+        "region": "SE Asia"
+      },
+      "severity": 3,
+      "confidence": 0.4,
+      "summary": "r/travel on Reddit: Countries where it's better/worse to go full Anthony Bourdain Really makes me want to dial back on countries that don&#x27;t have potable water. No issues in Thailand though. But Peru and turkey werent great ... I have family in SE Asia and whenever I visit I get some of that tra",
+      "url": "https://www.reddit.com/r/travel/comments/1qy4mj6/countries_where_its_betterworse_to_go_full/",
+      "timestamp": "2026-02-12T02:01:50.531105+00:00",
+      "published": "5 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "8d1780ea3d9d",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 31.79,
+        "lng": -7.09,
+        "name": "Morocco",
+        "country": "Morocco",
+        "iso": "MA",
+        "region": "North Africa"
+      },
+      "severity": 3,
+      "confidence": 0.4,
+      "summary": "r/travel on Reddit: The series of unfortunate events that was my first overseas trip Never in all the years of international travel have I done a long lat over. Meaning, 23+ hours in Paris between our heading home. Wow Paris soo excited. Booked a hotel with a view of the Eiffel, tiny balcony off our",
+      "url": "https://www.reddit.com/r/travel/comments/1qxb066/the_series_of_unfortunate_events_that_was_my/",
+      "timestamp": "2026-02-12T02:01:50.531240+00:00",
+      "published": "6 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    },
+    {
+      "id": "0a062a522435",
+      "source": "reddit",
+      "type": "community_report",
+      "disease": "food poisoning",
+      "category": "waterborne",
+      "emoji": "\ud83d\udca7",
+      "location": {
+        "lat": 1.35,
+        "lng": 103.82,
+        "name": "Singapore",
+        "country": "Singapore",
+        "iso": "SG",
+        "region": "SE Asia"
+      },
+      "severity": 3,
+      "confidence": 0.4,
+      "summary": "r/singapore on Reddit: Worker who cleaned BreadTalk display shelves with broom dismissed; outlet undergoes deep cleaning Don&#x27;t like it tbh. The point of the cert is to show that you understand and can follow basic hygiene. What&#x27;s the point of passing people who don&#x27;t? That&#x27;s how ",
+      "url": "https://www.reddit.com/r/singapore/comments/1r0txz7/worker_who_cleaned_breadtalk_display_shelves_with/",
+      "timestamp": "2026-02-12T02:01:50.531512+00:00",
+      "published": "2 days ago",
+      "is_traveler": false,
+      "anomaly": true,
+      "anomaly_factor": null
+    }
+  ],
+  "hotspots": [
+    {
+      "iso": "ET",
+      "name": "Ethiopia",
+      "lat": 9.15,
+      "lng": 40.49,
+      "region": "East Africa",
+      "signals": 1,
+      "max_severity": 10,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "CD",
+      "name": "DR Congo",
+      "lat": -4.04,
+      "lng": 21.76,
+      "region": "Central Africa",
+      "signals": 4,
+      "max_severity": 10,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "sources": [
+        "news",
+        "twitter",
+        "who"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "IN",
+      "name": "India",
+      "lat": 20.59,
+      "lng": 78.96,
+      "region": "South Asia",
+      "signals": 8,
+      "max_severity": 10,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "sources": [
+        "news",
+        "trends",
+        "twitter",
+        "who"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "BR",
+      "name": "Brazil",
+      "lat": -22.91,
+      "lng": -43.17,
+      "region": "Latin America",
+      "signals": 10,
+      "max_severity": 10,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "sources": [
+        "news",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "MY",
+      "name": "Malaysia",
+      "lat": 4.21,
+      "lng": 101.98,
+      "region": "SE Asia",
+      "signals": 1,
+      "max_severity": 10,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "BD",
+      "name": "Bangladesh",
+      "lat": 23.68,
+      "lng": 90.36,
+      "region": "South Asia",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "GN",
+      "name": "Guinea",
+      "lat": 9.95,
+      "lng": -9.7,
+      "region": "West Africa",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "polio"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "SD",
+      "name": "Sudan",
+      "lat": 12.86,
+      "lng": 30.22,
+      "region": "East Africa",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "NG",
+      "name": "Nigeria",
+      "lat": 9.08,
+      "lng": 7.49,
+      "region": "West Africa",
+      "signals": 3,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "sources": [
+        "news",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "ZM",
+      "name": "Zambia",
+      "lat": -13.13,
+      "lng": 27.85,
+      "region": "Southern Africa",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "PK",
+      "name": "Pakistan",
+      "lat": 30.38,
+      "lng": 69.35,
+      "region": "South Asia",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "polio"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "ZA",
+      "name": "South Africa",
+      "lat": -30.56,
+      "lng": 22.94,
+      "region": "Southern Africa",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "ZW",
+      "name": "Zimbabwe",
+      "lat": -19.02,
+      "lng": 29.15,
+      "region": "Southern Africa",
+      "signals": 1,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "CF",
+      "name": "Central African Republic",
+      "lat": 6.61,
+      "lng": 20.94,
+      "region": "Central Africa",
+      "signals": 4,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "fever",
+        "measles"
+      ],
+      "sources": [
+        "news",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "CU",
+      "name": "Cuba",
+      "lat": 21.52,
+      "lng": -77.78,
+      "region": "Caribbean",
+      "signals": 2,
+      "max_severity": 9,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "cholera"
+      ],
+      "sources": [
+        "news",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "KH",
+      "name": "Cambodia",
+      "lat": 12.57,
+      "lng": 104.99,
+      "region": "SE Asia",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "TH",
+      "name": "Thailand",
+      "lat": 13.75,
+      "lng": 100.5,
+      "region": "SE Asia",
+      "signals": 2,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "sources": [
+        "reddit",
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "MX",
+      "name": "Mexico",
+      "lat": 23.63,
+      "lng": -102.55,
+      "region": "Latin America",
+      "signals": 4,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "sources": [
+        "twitter",
+        "who"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "PE",
+      "name": "Peru",
+      "lat": -12.05,
+      "lng": -77.04,
+      "region": "Latin America",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "malaria"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "KE",
+      "name": "Kenya",
+      "lat": -0.02,
+      "lng": 37.91,
+      "region": "East Africa",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "sources": [
+        "news"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "AR",
+      "name": "Argentina",
+      "lat": -38.42,
+      "lng": -63.62,
+      "region": "Latin America",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "dengue"
+      ],
+      "sources": [
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "PH",
+      "name": "Philippines",
+      "lat": 12.88,
+      "lng": 121.77,
+      "region": "SE Asia",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "dengue"
+      ],
+      "sources": [
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "SG",
+      "name": "Singapore",
+      "lat": 1.35,
+      "lng": 103.82,
+      "region": "SE Asia",
+      "signals": 2,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "food poisoning",
+        "travel"
+      ],
+      "sources": [
+        "reddit",
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "GB",
+      "name": "United Kingdom",
+      "lat": 55.38,
+      "lng": -3.44,
+      "region": "Europe",
+      "signals": 5,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "hepatitis a",
+        "malaria",
+        "travel",
+        "yellow fever"
+      ],
+      "sources": [
+        "news",
+        "trends",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "HT",
+      "name": "Haiti",
+      "lat": 18.97,
+      "lng": -72.29,
+      "region": "Caribbean",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "DO",
+      "name": "Dominican Republic",
+      "lat": 18.74,
+      "lng": -70.16,
+      "region": "Caribbean",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "GH",
+      "name": "Ghana",
+      "lat": 7.95,
+      "lng": -1.02,
+      "region": "West Africa",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "TZ",
+      "name": "Tanzania",
+      "lat": -6.17,
+      "lng": 39.2,
+      "region": "East Africa",
+      "signals": 1,
+      "max_severity": 8,
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "sources": [
+        "reddit"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "SN",
+      "name": "Senegal",
+      "lat": 14.5,
+      "lng": -14.45,
+      "region": "West Africa",
+      "signals": 1,
+      "max_severity": 7,
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "FR",
+      "name": "France",
+      "lat": 46.23,
+      "lng": 2.21,
+      "region": "Europe",
+      "signals": 2,
+      "max_severity": 7,
+      "threat_level": "HIGH",
+      "diseases": [
+        "malaria"
+      ],
+      "sources": [
+        "reddit",
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "MA",
+      "name": "Morocco",
+      "lat": 31.79,
+      "lng": -7.09,
+      "region": "North Africa",
+      "signals": 2,
+      "max_severity": 6,
+      "threat_level": "HIGH",
+      "diseases": [
+        "food poisoning",
+        "measles"
+      ],
+      "sources": [
+        "reddit",
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": true
+    },
+    {
+      "iso": "CN",
+      "name": "China",
+      "lat": 22.32,
+      "lng": 114.17,
+      "region": "East Asia",
+      "signals": 4,
+      "max_severity": 6,
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "sources": [
+        "news",
+        "reddit",
+        "twitter"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": true
+    },
+    {
+      "iso": "ID",
+      "name": "Indonesia",
+      "lat": -2.5,
+      "lng": 118.0,
+      "region": "SE Asia",
+      "signals": 1,
+      "max_severity": 6,
+      "threat_level": "HIGH",
+      "diseases": [
+        "dengue"
+      ],
+      "sources": [
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "DE",
+      "name": "Germany",
+      "lat": 51.17,
+      "lng": 10.45,
+      "region": "Europe",
+      "signals": 1,
+      "max_severity": 6,
+      "threat_level": "HIGH",
+      "diseases": [
+        "malaria"
+      ],
+      "sources": [
+        "trends"
+      ],
+      "has_traveler_signals": true,
+      "has_anomaly": false
+    },
+    {
+      "iso": "SA",
+      "name": "Saudi Arabia",
+      "lat": 23.89,
+      "lng": 45.08,
+      "region": "Middle East",
+      "signals": 1,
+      "max_severity": 5,
+      "threat_level": "MODERATE",
+      "diseases": [
+        "unknown"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "UG",
+      "name": "Uganda",
+      "lat": 1.37,
+      "lng": 32.29,
+      "region": "East Africa",
+      "signals": 1,
+      "max_severity": 5,
+      "threat_level": "MODERATE",
+      "diseases": [
+        "unknown"
+      ],
+      "sources": [
+        "who"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "JP",
+      "name": "Japan",
+      "lat": 36.2,
+      "lng": 138.25,
+      "region": "East Asia",
+      "signals": 1,
+      "max_severity": 4,
+      "threat_level": "MODERATE",
+      "diseases": [
+        "fever"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    },
+    {
+      "iso": "PT",
+      "name": "Portugal",
+      "lat": 39.4,
+      "lng": -8.22,
+      "region": "Europe",
+      "signals": 1,
+      "max_severity": 3,
+      "threat_level": "LOW",
+      "diseases": [
+        "food poisoning"
+      ],
+      "sources": [
+        "twitter"
+      ],
+      "has_traveler_signals": false,
+      "has_anomaly": false
+    }
+  ],
+  "flightRoutes": [
+    {
+      "from": {
+        "lat": 9.02,
+        "lng": 38.75,
+        "city": "Addis Ababa",
+        "iata": "ADD"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 9.02,
+        "lng": 38.75,
+        "city": "Addis Ababa",
+        "iata": "ADD"
+      },
+      "to": {
+        "lat": -26.14,
+        "lng": 28.25,
+        "iata": "JNB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 9.02,
+        "lng": 38.75,
+        "city": "Addis Ababa",
+        "iata": "ADD"
+      },
+      "to": {
+        "lat": -1.32,
+        "lng": 36.93,
+        "iata": "NBO"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 9.02,
+        "lng": 38.75,
+        "city": "Addis Ababa",
+        "iata": "ADD"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 9.02,
+        "lng": 38.75,
+        "city": "Addis Ababa",
+        "iata": "ADD"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "marburg"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -4.44,
+        "lng": 15.27,
+        "city": "Kinshasa",
+        "iata": "FIH"
+      },
+      "to": {
+        "lat": 8.98,
+        "lng": 38.8,
+        "iata": "ADD"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -4.44,
+        "lng": 15.27,
+        "city": "Kinshasa",
+        "iata": "FIH"
+      },
+      "to": {
+        "lat": -1.32,
+        "lng": 36.93,
+        "iata": "NBO"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -4.44,
+        "lng": 15.27,
+        "city": "Kinshasa",
+        "iata": "FIH"
+      },
+      "to": {
+        "lat": -26.14,
+        "lng": 28.25,
+        "iata": "JNB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -4.44,
+        "lng": 15.27,
+        "city": "Kinshasa",
+        "iata": "FIH"
+      },
+      "to": {
+        "lat": 50.9,
+        "lng": 4.48,
+        "iata": "BRU"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -4.44,
+        "lng": 15.27,
+        "city": "Kinshasa",
+        "iata": "FIH"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "ebola",
+        "marburg",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "city": "Delhi",
+        "iata": "DEL"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "city": "Delhi",
+        "iata": "DEL"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "city": "Delhi",
+        "iata": "DEL"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "city": "Delhi",
+        "iata": "DEL"
+      },
+      "to": {
+        "lat": 13.69,
+        "lng": 100.75,
+        "iata": "BKK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "city": "Delhi",
+        "iata": "DEL"
+      },
+      "to": {
+        "lat": 40.64,
+        "lng": -73.78,
+        "iata": "JFK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 19.07,
+        "lng": 72.88,
+        "city": "Mumbai",
+        "iata": "BOM"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 19.07,
+        "lng": 72.88,
+        "city": "Mumbai",
+        "iata": "BOM"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 19.07,
+        "lng": 72.88,
+        "city": "Mumbai",
+        "iata": "BOM"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 19.07,
+        "lng": 72.88,
+        "city": "Mumbai",
+        "iata": "BOM"
+      },
+      "to": {
+        "lat": 25.26,
+        "lng": 51.57,
+        "iata": "DOH"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 19.07,
+        "lng": 72.88,
+        "city": "Mumbai",
+        "iata": "BOM"
+      },
+      "to": {
+        "lat": 40.64,
+        "lng": -73.78,
+        "iata": "JFK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "bird flu",
+        "cholera",
+        "h5n1",
+        "nipah",
+        "polio",
+        "travel",
+        "typhoid"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -23.55,
+        "lng": -46.63,
+        "city": "S\u00e3o Paulo",
+        "iata": "GRU"
+      },
+      "to": {
+        "lat": 25.79,
+        "lng": -80.29,
+        "iata": "MIA"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -23.55,
+        "lng": -46.63,
+        "city": "S\u00e3o Paulo",
+        "iata": "GRU"
+      },
+      "to": {
+        "lat": 40.64,
+        "lng": -73.78,
+        "iata": "JFK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -23.55,
+        "lng": -46.63,
+        "city": "S\u00e3o Paulo",
+        "iata": "GRU"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -23.55,
+        "lng": -46.63,
+        "city": "S\u00e3o Paulo",
+        "iata": "GRU"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": -23.55,
+        "lng": -46.63,
+        "city": "S\u00e3o Paulo",
+        "iata": "GRU"
+      },
+      "to": {
+        "lat": -34.82,
+        "lng": -58.54,
+        "iata": "EZE"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "covid",
+        "dengue",
+        "food poisoning",
+        "measles",
+        "mpox",
+        "nipah",
+        "yellow fever"
+      ],
+      "severity": 10
+    },
+    {
+      "from": {
+        "lat": 23.81,
+        "lng": 90.41,
+        "city": "Dhaka",
+        "iata": "DAC"
+      },
+      "to": {
+        "lat": 28.61,
+        "lng": 77.21,
+        "iata": "DEL"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 23.81,
+        "lng": 90.41,
+        "city": "Dhaka",
+        "iata": "DAC"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 23.81,
+        "lng": 90.41,
+        "city": "Dhaka",
+        "iata": "DAC"
+      },
+      "to": {
+        "lat": 2.74,
+        "lng": 101.7,
+        "iata": "KUL"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 23.81,
+        "lng": 90.41,
+        "city": "Dhaka",
+        "iata": "DAC"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 23.81,
+        "lng": 90.41,
+        "city": "Dhaka",
+        "iata": "DAC"
+      },
+      "to": {
+        "lat": 25.26,
+        "lng": 51.57,
+        "iata": "DOH"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "nipah"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 6.52,
+        "lng": 3.38,
+        "city": "Lagos",
+        "iata": "LOS"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 6.52,
+        "lng": 3.38,
+        "city": "Lagos",
+        "iata": "LOS"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 6.52,
+        "lng": 3.38,
+        "city": "Lagos",
+        "iata": "LOS"
+      },
+      "to": {
+        "lat": 8.98,
+        "lng": 38.8,
+        "iata": "ADD"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 6.52,
+        "lng": 3.38,
+        "city": "Lagos",
+        "iata": "LOS"
+      },
+      "to": {
+        "lat": -26.14,
+        "lng": 28.25,
+        "iata": "JNB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 6.52,
+        "lng": 3.38,
+        "city": "Lagos",
+        "iata": "LOS"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera",
+        "lassa fever",
+        "mpox"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": -26.2,
+        "lng": 28.05,
+        "city": "Johannesburg",
+        "iata": "JNB"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": -26.2,
+        "lng": 28.05,
+        "city": "Johannesburg",
+        "iata": "JNB"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": -26.2,
+        "lng": 28.05,
+        "city": "Johannesburg",
+        "iata": "JNB"
+      },
+      "to": {
+        "lat": 8.98,
+        "lng": 38.8,
+        "iata": "ADD"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": -26.2,
+        "lng": 28.05,
+        "city": "Johannesburg",
+        "iata": "JNB"
+      },
+      "to": {
+        "lat": -1.32,
+        "lng": 36.93,
+        "iata": "NBO"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": -26.2,
+        "lng": 28.05,
+        "city": "Johannesburg",
+        "iata": "JNB"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "cholera"
+      ],
+      "severity": 9
+    },
+    {
+      "from": {
+        "lat": 11.56,
+        "lng": 104.92,
+        "city": "Phnom Penh",
+        "iata": "PNH"
+      },
+      "to": {
+        "lat": 13.69,
+        "lng": 100.75,
+        "iata": "BKK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 11.56,
+        "lng": 104.92,
+        "city": "Phnom Penh",
+        "iata": "PNH"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 11.56,
+        "lng": 104.92,
+        "city": "Phnom Penh",
+        "iata": "PNH"
+      },
+      "to": {
+        "lat": 37.46,
+        "lng": 126.44,
+        "iata": "ICN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 11.56,
+        "lng": 104.92,
+        "city": "Phnom Penh",
+        "iata": "PNH"
+      },
+      "to": {
+        "lat": 22.31,
+        "lng": 113.92,
+        "iata": "HKG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 11.56,
+        "lng": 104.92,
+        "city": "Phnom Penh",
+        "iata": "PNH"
+      },
+      "to": {
+        "lat": 2.74,
+        "lng": 101.7,
+        "iata": "KUL"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "city": "Bangkok",
+        "iata": "BKK"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "city": "Bangkok",
+        "iata": "BKK"
+      },
+      "to": {
+        "lat": 22.31,
+        "lng": 113.92,
+        "iata": "HKG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "city": "Bangkok",
+        "iata": "BKK"
+      },
+      "to": {
+        "lat": 35.76,
+        "lng": 140.39,
+        "iata": "NRT"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "city": "Bangkok",
+        "iata": "BKK"
+      },
+      "to": {
+        "lat": 37.46,
+        "lng": 126.44,
+        "iata": "ICN"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 13.75,
+        "lng": 100.5,
+        "city": "Bangkok",
+        "iata": "BKK"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "anthrax",
+        "food poisoning"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 19.43,
+        "lng": -99.13,
+        "city": "Mexico City",
+        "iata": "MEX"
+      },
+      "to": {
+        "lat": 33.94,
+        "lng": -118.41,
+        "iata": "LAX"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 19.43,
+        "lng": -99.13,
+        "city": "Mexico City",
+        "iata": "MEX"
+      },
+      "to": {
+        "lat": 25.79,
+        "lng": -80.29,
+        "iata": "MIA"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 19.43,
+        "lng": -99.13,
+        "city": "Mexico City",
+        "iata": "MEX"
+      },
+      "to": {
+        "lat": 40.64,
+        "lng": -73.78,
+        "iata": "JFK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 19.43,
+        "lng": -99.13,
+        "city": "Mexico City",
+        "iata": "MEX"
+      },
+      "to": {
+        "lat": 40.47,
+        "lng": -3.57,
+        "iata": "MAD"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 19.43,
+        "lng": -99.13,
+        "city": "Mexico City",
+        "iata": "MEX"
+      },
+      "to": {
+        "lat": 4.7,
+        "lng": -74.15,
+        "iata": "BOG"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "chikungunya",
+        "fever",
+        "food poisoning",
+        "h5n1"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": -1.29,
+        "lng": 36.82,
+        "city": "Nairobi",
+        "iata": "NBO"
+      },
+      "to": {
+        "lat": 8.98,
+        "lng": 38.8,
+        "iata": "ADD"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": -1.29,
+        "lng": 36.82,
+        "city": "Nairobi",
+        "iata": "NBO"
+      },
+      "to": {
+        "lat": 25.25,
+        "lng": 55.36,
+        "iata": "DXB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": -1.29,
+        "lng": 36.82,
+        "city": "Nairobi",
+        "iata": "NBO"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": -1.29,
+        "lng": 36.82,
+        "city": "Nairobi",
+        "iata": "NBO"
+      },
+      "to": {
+        "lat": -26.14,
+        "lng": 28.25,
+        "iata": "JNB"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": -1.29,
+        "lng": 36.82,
+        "city": "Nairobi",
+        "iata": "NBO"
+      },
+      "to": {
+        "lat": 13.69,
+        "lng": 100.75,
+        "iata": "BKK"
+      },
+      "threat_level": "CRITICAL",
+      "diseases": [
+        "yellow fever"
+      ],
+      "severity": 8
+    },
+    {
+      "from": {
+        "lat": 14.69,
+        "lng": -17.44,
+        "city": "Dakar",
+        "iata": "DSS"
+      },
+      "to": {
+        "lat": 49.01,
+        "lng": 2.55,
+        "iata": "CDG"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "severity": 7
+    },
+    {
+      "from": {
+        "lat": 14.69,
+        "lng": -17.44,
+        "city": "Dakar",
+        "iata": "DSS"
+      },
+      "to": {
+        "lat": 33.37,
+        "lng": -7.59,
+        "iata": "CMN"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "severity": 7
+    },
+    {
+      "from": {
+        "lat": 14.69,
+        "lng": -17.44,
+        "city": "Dakar",
+        "iata": "DSS"
+      },
+      "to": {
+        "lat": 8.98,
+        "lng": 38.8,
+        "iata": "ADD"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "severity": 7
+    },
+    {
+      "from": {
+        "lat": 14.69,
+        "lng": -17.44,
+        "city": "Dakar",
+        "iata": "DSS"
+      },
+      "to": {
+        "lat": 38.77,
+        "lng": -9.13,
+        "iata": "LIS"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "severity": 7
+    },
+    {
+      "from": {
+        "lat": 14.69,
+        "lng": -17.44,
+        "city": "Dakar",
+        "iata": "DSS"
+      },
+      "to": {
+        "lat": 40.47,
+        "lng": -3.57,
+        "iata": "MAD"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "rift valley fever"
+      ],
+      "severity": 7
+    },
+    {
+      "from": {
+        "lat": 39.9,
+        "lng": 116.41,
+        "city": "Beijing",
+        "iata": "PEK"
+      },
+      "to": {
+        "lat": 37.46,
+        "lng": 126.44,
+        "iata": "ICN"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "severity": 6
+    },
+    {
+      "from": {
+        "lat": 39.9,
+        "lng": 116.41,
+        "city": "Beijing",
+        "iata": "PEK"
+      },
+      "to": {
+        "lat": 35.76,
+        "lng": 140.39,
+        "iata": "NRT"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "severity": 6
+    },
+    {
+      "from": {
+        "lat": 39.9,
+        "lng": 116.41,
+        "city": "Beijing",
+        "iata": "PEK"
+      },
+      "to": {
+        "lat": 1.35,
+        "lng": 103.99,
+        "iata": "SIN"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "severity": 6
+    },
+    {
+      "from": {
+        "lat": 39.9,
+        "lng": 116.41,
+        "city": "Beijing",
+        "iata": "PEK"
+      },
+      "to": {
+        "lat": 51.47,
+        "lng": -0.46,
+        "iata": "LHR"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "severity": 6
+    },
+    {
+      "from": {
+        "lat": 39.9,
+        "lng": 116.41,
+        "city": "Beijing",
+        "iata": "PEK"
+      },
+      "to": {
+        "lat": 40.64,
+        "lng": -73.78,
+        "iata": "JFK"
+      },
+      "threat_level": "HIGH",
+      "diseases": [
+        "chikungunya",
+        "covid",
+        "dengue",
+        "diarrhea"
+      ],
+      "severity": 6
+    }
+  ],
+  "stats": {
+    "total_signals": 77,
+    "by_source": {
+      "who": 12,
+      "news": 25,
+      "twitter": 25,
+      "trends": 9,
+      "reddit": 6
+    },
+    "by_category": {
+      "hemorrhagic": 4,
+      "viral": 7,
+      "vaccine-preventable": 6,
+      "waterborne": 23,
+      "respiratory": 7,
+      "bacterial": 1,
+      "vector-borne": 21,
+      "unknown": 8
+    },
+    "by_severity": {
+      "critical": 41,
+      "high": 16,
+      "moderate": 14,
+      "low": 6
+    },
+    "by_region": {
+      "East Africa": 5,
+      "Central Africa": 8,
+      "South Asia": 10,
+      "West Africa": 6,
+      "Latin America": 16,
+      "SE Asia": 8,
+      "Southern Africa": 3,
+      "North Africa": 2,
+      "Caribbean": 4,
+      "Middle East": 1,
+      "East Asia": 5,
+      "Europe": 9
+    },
+    "by_type": {
+      "official_alert": 12,
+      "traveler_report": 21,
+      "outbreak_report": 14,
+      "search_spike": 9,
+      "symptom_report": 15,
+      "community_report": 6
+    },
+    "countries_affected": 38,
+    "traveler_signals": 30,
+    "anomalies_detected": 29,
+    "scan_duration_sec": 54.5
+  }
+}
