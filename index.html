@@ -193,6 +193,14 @@
   </div>
   <div class="tsep"></div>
   <div class="tbar-group">
+    <span class="tbar-label">Time</span>
+    <button class="tbtn on" data-f="time" data-v="30d">30 days</button>
+    <button class="tbtn" data-f="time" data-v="7d">7 days</button>
+    <button class="tbtn" data-f="time" data-v="24h">24h</button>
+    <button class="tbtn" data-f="time" data-v="all">All time</button>
+  </div>
+  <div class="tsep"></div>
+  <div class="tbar-group">
     <button class="ttoggle" id="flightToggle" onclick="toggleFlights()">✈️ Flight Routes</button>
     <button class="ttoggle" id="travelerToggle" onclick="toggleTravelers()">🧳 Travelers Only</button>
   </div>
@@ -229,7 +237,7 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 let D=null,activeTab='signals',markers=[],flightLines=[],showFlights=false,showTravelers=false;
-let filterSource='all',filterSev='all';
+let filterSource='all',filterSev='all',filterTime='30d';
 
 const SEV={critical:'#d32f2f',high:'#e65100',moderate:'#f9a825',low:'#2e7d32'};
 const CAT_C={'vector-borne':'#e65100',waterborne:'#0288d1',respiratory:'#7c3aed',viral:'#d32f2f',hemorrhagic:'#b71c1c',bacterial:'#f9a825','vaccine-preventable':'#2e7d32',parasitic:'#ff6f00',unknown:'#90a4ae'};
@@ -267,15 +275,39 @@ function filterBySev(el,level){
   refresh();
 }
 
+function parseAge(pub){
+  if(!pub)return null;
+  // ISO date: 2026-01-26
+  if(/^\d{4}-\d{2}/.test(pub))return new Date(pub);
+  // Relative: "4 hours ago", "2 days ago", "1 week ago", "last 7 day"
+  const now=Date.now();
+  const m=pub.match(/(\d+)\s*(hour|day|week|month)/i);
+  if(m){
+    const n=parseInt(m[1]),u=m[2].toLowerCase();
+    const ms={hour:3600000,day:86400000,week:604800000,month:2592000000};
+    return new Date(now-(n*(ms[u]||86400000)));
+  }
+  if(/last\s*7/i.test(pub))return new Date(now-604800000);
+  if(/last\s*30/i.test(pub))return new Date(now-2592000000);
+  return null;
+}
+
 function getFiltered(){
   if(!D)return[];
+  const now=Date.now();
+  const cutoffs={all:0,'24h':86400000,'7d':604800000,'30d':2592000000};
+  const cut=cutoffs[filterTime]||2592000000;
   return D.signals.filter(s=>{
     if(filterSource!=='all'&&s.source!==filterSource)return false;
     if(filterSev==='crit'&&s.severity<8)return false;
-    if(filterSev==='high'&&s.severity<6)return false;
+    if(filterSev==='high'&&(s.severity<6||s.severity>=8))return false;
     if(filterSev==='mod'&&(s.severity<4||s.severity>=6))return false;
     if(filterSev==='low'&&s.severity>=4)return false;
     if(showTravelers&&!s.is_traveler)return false;
+    if(filterTime!=='all'&&cut>0){
+      const d=parseAge(s.published);
+      if(d&&(now-d.getTime())>cut)return false;
+    }
     return true;
   });
 }
@@ -334,6 +366,7 @@ document.querySelectorAll('.tbtn[data-f]').forEach(b=>{
     b.classList.add('on');
     if(g==='source')filterSource=b.dataset.v;
     if(g==='sev')filterSev=b.dataset.v;
+    if(g==='time')filterTime=b.dataset.v;
     refresh();
   };
 });
@@ -346,6 +379,13 @@ function renderPanel(){if(activeTab==='signals')renderSignals();else if(activeTa
 
 function renderSignals(){
   const el=document.getElementById('panel'),sigs=getFiltered();
+  // Sort newest first
+  sigs.sort((a,b)=>{
+    const da=parseAge(a.published),db=parseAge(b.published);
+    if(da&&db)return db.getTime()-da.getTime();
+    if(da)return -1;if(db)return 1;
+    return b.severity-a.severity;
+  });
   if(!sigs.length){el.innerHTML='<div style="padding:30px;text-align:center;color:var(--dim);font-size:.7rem">No signals match current filters</div>';return}
   el.innerHTML=sigs.map(s=>{
     const c=sc(s.severity),sl2=c;
@@ -359,7 +399,7 @@ function renderSignals(){
         <div class="sig-sum">${esc(s.summary)}</div>
       </a>
       <div class="sig-loc" onclick="flyTo(${s.location.lat},${s.location.lng})">${esc(s.location.name)}, ${esc(s.location.country)}</div>
-      <div class="sig-meta"><span>🎯 ${(s.confidence*100).toFixed(0)}% confidence</span><span>· ${s.type.replace(/_/g,' ')}</span><span>· ${s.published||''}</span></div>
+      <div class="sig-meta"><span>🕐 ${s.published||'unknown'}</span><span>· 🎯 ${(s.confidence*100).toFixed(0)}%</span><span>· ${s.type.replace(/_/g,' ')}</span></div>
     </div>`;
   }).join('');
 }
